@@ -1,0 +1,36 @@
+/* 
+  Localizable.strings
+  DrinkWater
+
+  Created by Tatiana Ampilogova on 2/27/20.
+  Copyright © 2020 Tatiana Ampilogova. All rights reserved.
+*/
+// Settitngs
+"volume" = "Объем";
+"notifications" = "Уведомления";
+"send.feedback" = "Написать разработчику";
+"settings" = "Настройки";
+"temperature.unit" = "Единица измерения температуры";
+
+//Unit
+"ounces" = "Унции";
+"liter" = "Литры";
+"ml" = " мл";
+"fl.oz" = " унций";
+"celsius" = "Цельсия";
+"fahrenheit" = "Фаренгейт";
+"of" = "от";
+
+//Confirm
+"confirm.ok" = "Ок";
+"confirm.cancel" = "Отмена";
+
+//Notice
+"alarm" = "Предупреждение";
+"notification.remove.info" = "При изменении единицы измерения предыдущие данные будут потеряны";
+"insert.your.amount" = "Введите свое количество";
+"insert.your.goal" = "Введите свою цель";
+
+"8eu-6g-hzO.text" = "Сегодня";
+
+"history" = "История";
