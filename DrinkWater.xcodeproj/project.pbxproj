@@ -32,6 +32,7 @@
 		CEC95DF023D23D3D0091B09F /* AppSettingsVolume.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC95DEF23D23D3D0091B09F /* AppSettingsVolume.swift */; };
 		CEC95DF223D65A050091B09F /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC95DF123D65A050091B09F /* DateHelper.swift */; };
 		CED6E15B23FF310E006085E2 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6E15A23FF310E006085E2 /* UIColor.swift */; };
+		CED7406A24EB46D6001B917D /* NotificationsSchedulerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7406924EB46D6001B917D /* NotificationsSchedulerViewController.swift */; };
 		CEF39DB923D0FFBD00D692A3 /* VolumeSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF39DB823D0FFBD00D692A3 /* VolumeSettingViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,7 @@
 		CEC95DEF23D23D3D0091B09F /* AppSettingsVolume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsVolume.swift; sourceTree = "<group>"; };
 		CEC95DF123D65A050091B09F /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		CED6E15A23FF310E006085E2 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		CED7406924EB46D6001B917D /* NotificationsSchedulerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsSchedulerViewController.swift; sourceTree = "<group>"; };
 		CEF39DB823D0FFBD00D692A3 /* VolumeSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeSettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				CE82C4F423A026D80030561C /* WaterViewController.swift */,
+				CED7406924EB46D6001B917D /* NotificationsSchedulerViewController.swift */,
 				CE3B9BA523973177006C4BD7 /* Main.storyboard */,
 			);
 			path = Main;
@@ -245,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED7406A24EB46D6001B917D /* NotificationsSchedulerViewController.swift in Sources */,
 				CE894D0223D0F76500DE9140 /* SettingsCell.swift in Sources */,
 				CE84B0D023C9203D00364247 /* NSObject+Extensions.swift in Sources */,
 				CE63651623C11720006E82CE /* UIView+Extensions.swift in Sources */,
@@ -422,6 +426,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EBA589ECLL;
 				INFOPLIST_FILE = DrinkWater/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -440,6 +445,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EBA589ECLL;
 				INFOPLIST_FILE = DrinkWater/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
