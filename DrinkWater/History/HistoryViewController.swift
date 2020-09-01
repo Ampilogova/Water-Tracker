@@ -44,8 +44,12 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
         cell.dateLabel?.text = DateHelper.formattedDate(from: date)
         if AppSettingsVolume.unit != .liter {
             cell.valueLabel?.text = VolumeFormatter.string(from: value) + loc("fl.oz")
+            cell.valueLabel?.font = UIFont(name: "Arial", size: 21)
+            cell.valueLabel?.textColor = UIColor(red: 172, green: 170, blue: 170)
         } else {
             cell.valueLabel?.text = VolumeFormatter.string(from: value) + loc("ml")
+            cell.valueLabel?.font = UIFont(name: "Arial", size: 21)
+            cell.valueLabel?.textColor = UIColor(red: 172, green: 170, blue: 170)
         }
         cell.accessoryType = .disclosureIndicator
         

@@ -54,9 +54,11 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         if indexPath.row == 0 {
             viewController = VolumeSettingViewController()
             self.navigationController?.pushViewController(viewController, animated: true)
+        } else if indexPath.row == 1 {
+            viewController = NotificationViewController()
+            self.navigationController?.pushViewController(viewController, animated: true)
         } else if indexPath.row == 2 {
             showMailComposer()
-            self.navigationController?.pushViewController(viewController, animated: true)
         }
     }
     
@@ -67,13 +69,13 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         }
         let composer = MFMailComposeViewController()
         composer.mailComposeDelegate = self
-        composer.setCcRecipients(["XXX@gmail.com"])
+        composer.setToRecipients(["tampilogova@icloud.com"])
         composer.setSubject("Drink Water feedback")
         composer.setMessageBody("Hi!", isHTML: false)
         
         self.present(composer, animated: true)
     }
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
-        controller.dismiss(animated: true)
+        controller.dismiss(animated: true, completion: nil)
     }
 }

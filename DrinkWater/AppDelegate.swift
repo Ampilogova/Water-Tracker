@@ -10,21 +10,23 @@ import UIKit
 import UserNotifications
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate {
     
-    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
-        completionHandler([.alert, .sound])
-    }
+//    UNUserNotificationCenterDelegate
     
-    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-        if response.notification.request.identifier == "LocalNotification" {
-            print("Handling notification with identifier 'LocalNotification'")
-        }
-        completionHandler()
-    }
+//    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+//        completionHandler([.alert, .sound])
+//    }
+//
+//    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+//        if response.notification.request.identifier == "LocalNotification" {
+//            print("Handling notification with identifier 'LocalNotification'")
+//        }
+//        completionHandler()
+//    }
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        UNUserNotificationCenter.current().delegate = self
+//        UNUserNotificationCenter.current().delegate = self
         
         let notificationenter = UNUserNotificationCenter.current()
         let options: UNAuthorizationOptions = [.alert, .sound]
