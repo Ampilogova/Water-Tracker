@@ -14,7 +14,7 @@ class NotificationViewController: UIViewController, UICollectionViewDelegate {
     let notificationService = NotificationService()
     
     var timeSet = Set<Int>()
-    let timeData = ["00:00","12:00","1:00", "13:00","2:00","14:00","3:00", "15:00", "4:00", "16:00", "5:00", "17:00", "6:00", "18:00", "7:00", "19:00", "8:00", "20:00", "9:00", "21:00", "10:00", "22:00", "11:00", "23:00"]
+    let timeData = ["00:00", "12:00", "1:00", "13:00","2:00", "14:00", "3:00", "15:00", "4:00", "16:00", "5:00", "17:00", "6:00", "18:00", "7:00", "19:00", "8:00", "20:00", "9:00", "21:00", "10:00", "22:00", "11:00", "23:00"]
     
     
     let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
@@ -58,8 +58,18 @@ extension NotificationViewController: UICollectionViewDelegateFlowLayout, UIColl
             else {
                 preconditionFailure("TimeCell can't be dequeued")
         }
+        
         let time = timeData[indexPath.row]
-        cell.timeLabel?.text = time
+        let dateFormatter = DateFormatter()
+        
+        dateFormatter.locale = Locale.current
+        dateFormatter.dateFormat = "HH:mm"
+        let date = dateFormatter.date(from: time) ?? Date()
+        let dateFormatter2 = DateFormatter()
+        dateFormatter2.timeStyle = .short
+        let date1 = dateFormatter2.string(from: date)
+        
+        cell.timeLabel?.text = date1
         if timeSet.contains(indexPath.row) {
             cell.selectionView.backgroundColor = UIColor(red: 11, green: 231, blue: 251)
         } else {

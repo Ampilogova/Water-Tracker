@@ -12,6 +12,8 @@ import NotificationCenter
 class NotificationService {
     
     func notificationsScheduler(hours: [Int]) {
+        UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
+        
         let content = UNMutableNotificationContent()
         content.title = "Water Tracker"
         content.body = "Don't forget to drink a glass of water"
