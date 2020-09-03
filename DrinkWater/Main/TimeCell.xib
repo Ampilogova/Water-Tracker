@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="VUi-Rm-F0K" customClass="TimeCell" customModule="DrinkWater" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="254" height="96"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="vei-jt-MPl">
+                <rect key="frame" x="0.0" y="0.0" width="254" height="96"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IIt-57-IGB">
+                        <rect key="frame" x="62" y="35.5" width="50" height="25.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                        <color key="textColor" red="0.67450980390000004" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mz2-Mj-Ama">
+                        <rect key="frame" x="16" y="33" width="30" height="30"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="FNV-q0-a1V"/>
+                            <constraint firstAttribute="height" constant="30" id="KW0-wp-vht"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="IIt-57-IGB" firstAttribute="leading" secondItem="mz2-Mj-Ama" secondAttribute="trailing" constant="16" id="Gfw-Pj-9bh"/>
+                    <constraint firstItem="IIt-57-IGB" firstAttribute="centerY" secondItem="vei-jt-MPl" secondAttribute="centerY" id="eEs-Mt-X7B"/>
+                    <constraint firstItem="mz2-Mj-Ama" firstAttribute="centerY" secondItem="vei-jt-MPl" secondAttribute="centerY" id="jGO-d9-TwR"/>
+                    <constraint firstItem="mz2-Mj-Ama" firstAttribute="leading" secondItem="vei-jt-MPl" secondAttribute="leading" constant="16" id="xvi-IZ-nGl"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="254" height="96"/>
+            <connections>
+                <outlet property="selectionView" destination="mz2-Mj-Ama" id="9Kq-rF-wL0"/>
+                <outlet property="timeLabel" destination="IIt-57-IGB" id="J7s-hq-1wH"/>
+            </connections>
+            <point key="canvasLocation" x="163.768115942029" y="34.151785714285715"/>
+        </collectionViewCell>
+    </objects>
+</document>

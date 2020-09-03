@@ -51,9 +51,13 @@ class DetailHistoryViewController: UIViewController, UITableViewDelegate, UITabl
         }
         let time = detailHistory[indexPath.row].time
         let value = detailHistory[indexPath.row].value
-        cell.dateLabel?.text = time
-        cell.valueLabel?.text = VolumeFormatter.string(from: value)
-        
+        if AppSettingsVolume.unit != .liter {
+            cell.dateLabel?.text = time
+            cell.valueLabel?.text = VolumeFormatter.string(from: value) + loc("fl.oz")
+        } else {
+            cell.dateLabel?.text = time
+            cell.valueLabel?.text = VolumeFormatter.string(from: value) + loc("ml")
+        }
         return cell
     }
     

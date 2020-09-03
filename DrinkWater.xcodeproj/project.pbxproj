@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE0E5F8224EEFFD50072C64F /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0E5F8124EEFFD50072C64F /* NotificationViewController.swift */; };
+		CE0E5F8424EF1D5C0072C64F /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0E5F8324EF1D5C0072C64F /* UIView+Layout.swift */; };
+		CE0E5F8624EF24EA0072C64F /* TimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0E5F8524EF24EA0072C64F /* TimeCell.swift */; };
+		CE0E5F8824EF25440072C64F /* TimeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0E5F8724EF25440072C64F /* TimeCell.xib */; };
 		CE3B9BA023973177006C4BD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3B9B9F23973177006C4BD7 /* AppDelegate.swift */; };
 		CE3B9BA223973177006C4BD7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3B9BA123973177006C4BD7 /* SceneDelegate.swift */; };
 		CE3B9BA723973177006C4BD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3B9BA523973177006C4BD7 /* Main.storyboard */; };
@@ -16,6 +20,7 @@
 		CE63651823C3E163006E82CE /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE63651723C3E163006E82CE /* HistoryViewController.swift */; };
 		CE63651F23C51855006E82CE /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE63651D23C51855006E82CE /* HistoryCell.swift */; };
 		CE63652023C51855006E82CE /* HistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE63651E23C51855006E82CE /* HistoryCell.xib */; };
+		CE81E99024FDCEBE004C8A90 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE81E98F24FDCEBE004C8A90 /* NotificationService.swift */; };
 		CE82C4F523A026D80030561C /* WaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE82C4F423A026D80030561C /* WaterViewController.swift */; };
 		CE84B0D023C9203D00364247 /* NSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84B0CF23C9203D00364247 /* NSObject+Extensions.swift */; };
 		CE84B0D223C9244A00364247 /* VolumeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84B0D123C9244A00364247 /* VolumeFormatter.swift */; };
@@ -38,6 +43,10 @@
 /* Begin PBXFileReference section */
 		CE0538F224070C0B006A027F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		CE0538F324070C0B006A027F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		CE0E5F8124EEFFD50072C64F /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		CE0E5F8324EF1D5C0072C64F /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		CE0E5F8524EF24EA0072C64F /* TimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCell.swift; sourceTree = "<group>"; };
+		CE0E5F8724EF25440072C64F /* TimeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeCell.xib; sourceTree = "<group>"; };
 		CE3B9B9C23973177006C4BD7 /* DrinkWater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrinkWater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3B9B9F23973177006C4BD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE3B9BA123973177006C4BD7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +58,7 @@
 		CE63651723C3E163006E82CE /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		CE63651D23C51855006E82CE /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
 		CE63651E23C51855006E82CE /* HistoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryCell.xib; sourceTree = "<group>"; };
+		CE81E98F24FDCEBE004C8A90 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		CE82C4F423A026D80030561C /* WaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterViewController.swift; sourceTree = "<group>"; };
 		CE84B0CF23C9203D00364247 /* NSObject+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extensions.swift"; sourceTree = "<group>"; };
 		CE84B0D123C9244A00364247 /* VolumeFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeFormatter.swift; sourceTree = "<group>"; };
@@ -150,6 +160,9 @@
 			isa = PBXGroup;
 			children = (
 				CE82C4F423A026D80030561C /* WaterViewController.swift */,
+				CE0E5F8124EEFFD50072C64F /* NotificationViewController.swift */,
+				CE0E5F8524EF24EA0072C64F /* TimeCell.swift */,
+				CE0E5F8724EF25440072C64F /* TimeCell.xib */,
 				CE3B9BA523973177006C4BD7 /* Main.storyboard */,
 			);
 			path = Main;
@@ -159,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				CEAC31F023BAFC3000340371 /* WaterService.swift */,
+				CE81E98F24FDCEBE004C8A90 /* NotificationService.swift */,
 				CE63651423C10B99006E82CE /* UIView+Extensions.swift */,
 				CEA858B32416F3A90041F257 /* DataModels.swift */,
 				CE84B0D123C9244A00364247 /* VolumeFormatter.swift */,
@@ -166,6 +180,7 @@
 				CE84B0CF23C9203D00364247 /* NSObject+Extensions.swift */,
 				CEC95DF123D65A050091B09F /* DateHelper.swift */,
 				CEAC31EE23AC59DC00340371 /* Volume.swift */,
+				CE0E5F8324EF1D5C0072C64F /* UIView+Layout.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -229,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE0E5F8824EF25440072C64F /* TimeCell.xib in Resources */,
 				CE63652023C51855006E82CE /* HistoryCell.xib in Resources */,
 				CEBACC5B2408CF60003C498C /* Localizable.strings in Resources */,
 				CE3B9BAC2397317D006C4BD7 /* LaunchScreen.storyboard in Resources */,
@@ -245,12 +261,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE0E5F8624EF24EA0072C64F /* TimeCell.swift in Sources */,
 				CE894D0223D0F76500DE9140 /* SettingsCell.swift in Sources */,
 				CE84B0D023C9203D00364247 /* NSObject+Extensions.swift in Sources */,
 				CE63651623C11720006E82CE /* UIView+Extensions.swift in Sources */,
+				CE81E99024FDCEBE004C8A90 /* NotificationService.swift in Sources */,
 				CE894CFF23D0F22100DE9140 /* Setting.swift in Sources */,
 				CE3B9BA023973177006C4BD7 /* AppDelegate.swift in Sources */,
 				CE3B9BA223973177006C4BD7 /* SceneDelegate.swift in Sources */,
+				CE0E5F8424EF1D5C0072C64F /* UIView+Layout.swift in Sources */,
 				CE84B0D223C9244A00364247 /* VolumeFormatter.swift in Sources */,
 				CEBACC622408D097003C498C /* Localize.swift in Sources */,
 				CEAC31F123BAFC3000340371 /* WaterService.swift in Sources */,
@@ -262,6 +281,7 @@
 				CED6E15B23FF310E006085E2 /* UIColor.swift in Sources */,
 				CEA858B42416F3A90041F257 /* DataModels.swift in Sources */,
 				CE63651823C3E163006E82CE /* HistoryViewController.swift in Sources */,
+				CE0E5F8224EEFFD50072C64F /* NotificationViewController.swift in Sources */,
 				CE84B0D623C9273E00364247 /* DetailHistoryViewController.swift in Sources */,
 				CE82C4F523A026D80030561C /* WaterViewController.swift in Sources */,
 				CE894CFD23D0EE6600DE9140 /* SettingsViewController.swift in Sources */,
@@ -422,6 +442,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EBA589ECLL;
 				INFOPLIST_FILE = DrinkWater/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -440,6 +461,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EBA589ECLL;
 				INFOPLIST_FILE = DrinkWater/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (

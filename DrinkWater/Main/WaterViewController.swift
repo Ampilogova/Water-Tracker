@@ -14,10 +14,6 @@ class WaterViewController: UIViewController {
     let waterService = WaterService()
     let mainShapeLayer = CAShapeLayer()
     let secondShapeLayer = CAShapeLayer()
-    let smallShapeLayerS = CAShapeLayer()
-    let smallShapeLayerM = CAShapeLayer()
-    let smallShapeLayerL = CAShapeLayer()
-    let smallShapeLayerA = CAShapeLayer()
     
     let colorAqua = UIColor(red: 11, green: 231, blue: 251)
     let tealColorAqua = UIColor(red: 191, green: 249, blue: 253)
@@ -41,7 +37,6 @@ class WaterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //        waterService.remove()
         
     }
     
@@ -78,7 +73,6 @@ class WaterViewController: UIViewController {
     
     func createMainCircle() {
         let bounds = chartView.bounds
-            //CGRect(x: countWater.frame.origin.x - 150 + countWater.frame.width / 2, y: countWater.frame.origin.y - 60, width: 300, height: 300)
         mainShapeLayer.path = UIBezierPath(roundedRect: bounds, byRoundingCorners: .allCorners, cornerRadii: CGSize(width: 100, height: 100)).cgPath
         mainShapeLayer.lineCap = CAShapeLayerLineCap.round
         mainShapeLayer.strokeColor = colorAqua.cgColor
@@ -90,7 +84,6 @@ class WaterViewController: UIViewController {
     
     func createSecondCircle() {
         let bounds = chartView.bounds
-            //CGRect(x: countWater.frame.origin.x - 150 + countWater.frame.width / 2, y: countWater.frame.origin.y - 60, width: 300, height: 300)
         secondShapeLayer.path = UIBezierPath(roundedRect: bounds, byRoundingCorners: .allCorners, cornerRadii: CGSize(width: 100, height: 100)).cgPath
         secondShapeLayer.lineCap = CAShapeLayerLineCap.round
         secondShapeLayer.strokeColor = tealColorAqua.cgColor

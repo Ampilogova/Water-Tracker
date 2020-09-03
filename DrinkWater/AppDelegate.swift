@@ -7,14 +7,34 @@
 //
 
 import UIKit
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
+    
+//    UNUserNotificationCenterDelegate
+    
+//    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+//        completionHandler([.alert, .sound])
+//    }
+//
+//    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+//        if response.notification.request.identifier == "LocalNotification" {
+//            print("Handling notification with identifier 'LocalNotification'")
+//        }
+//        completionHandler()
+//    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+//        UNUserNotificationCenter.current().delegate = self
+        
+        let notificationenter = UNUserNotificationCenter.current()
+        let options: UNAuthorizationOptions = [.alert, .sound]
+        notificationenter.requestAuthorization(options: options) { (didAllow, error) in
+            if !didAllow {
+                print("User has declined notifications")
+            }
+        }
         return true
     }
 

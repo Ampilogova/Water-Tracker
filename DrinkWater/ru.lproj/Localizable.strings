@@ -19,7 +19,7 @@
 "fl.oz" = " унций";
 "celsius" = "Цельсия";
 "fahrenheit" = "Фаренгейт";
-"of" = "от";
+"of" = "от ";
 
 //Confirm
 "confirm.ok" = "Ок";
