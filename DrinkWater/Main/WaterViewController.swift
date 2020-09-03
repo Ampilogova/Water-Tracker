@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import CoreLocation
+import AudioToolbox
 
 class WaterViewController: UIViewController {
     
@@ -55,7 +55,7 @@ class WaterViewController: UIViewController {
         }
         
         let oldMaxValue = AppSettingsVolume.unit.maxAmount
-        reloadCycle(oldMaxValue: oldMaxValue)
+        reloadCircle(oldMaxValue: oldMaxValue)
     }
     
     override func viewDidLayoutSubviews() {
@@ -66,9 +66,9 @@ class WaterViewController: UIViewController {
             button.makeRounded()
             button.dropShadow()
         }
-        
         createSecondCircle()
         createMainCircle()
+       
     }
     
     func createMainCircle() {
@@ -105,6 +105,7 @@ class WaterViewController: UIViewController {
             volume = .m
             handleTap(value: volume?.value ?? 0.0)
         }
+        fullCircle(value: volume?.value ?? 0.0)
         waterService.addWater(value: volume?.value ?? 0.0)
         updateVolumeLabel()
     }
@@ -158,7 +159,7 @@ class WaterViewController: UIViewController {
             let text = showAlert.textFields?.first?.text ?? ""
             UnitVolume.customAmount = Double(text) ?? 0.0
             self.updateAmountGoal()
-            self.reloadCycle(oldMaxValue: oldMaxValue)
+            self.reloadCircle(oldMaxValue: oldMaxValue)
         }
         let cancelAction = UIAlertAction(title: loc("confirm.cancel"), style: .cancel, handler: nil)
         showAlert.addAction(okAction)
@@ -178,15 +179,24 @@ class WaterViewController: UIViewController {
         mainShapeLayer.add(basicAnimation, forKey: "basicAnimation")
     }
     
-    func reloadCycle(oldMaxValue: Double) {
+    func reloadCircle(oldMaxValue: Double) {
         let current = waterService.currentWaterAmount()
         let currentMaxAmount = AppSettingsVolume.unit.maxAmount
         let basicAnimation = CABasicAnimation(keyPath: "strokeEnd")
         basicAnimation.fromValue = current / oldMaxValue
         basicAnimation.toValue = current / currentMaxAmount
-        basicAnimation.duration = 2
+        basicAnimation.duration = 0.5
         basicAnimation.fillMode = CAMediaTimingFillMode.forwards
         basicAnimation.isRemovedOnCompletion = false
         mainShapeLayer.add(basicAnimation, forKey: "basicAnimation")
+    }
+    func fullCircle(value: Double) {
+        let currentMaxAmount = AppSettingsVolume.unit.maxAmount
+        let currentValue = waterService.currentWaterAmount()
+        if currentValue + value >= currentMaxAmount && currentValue < currentMaxAmount {
+            for _ in 1...5 {
+                AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
+            }
+        }
     }
 }
