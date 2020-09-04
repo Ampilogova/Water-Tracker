@@ -9,28 +9,34 @@
 import UIKit
 import AudioToolbox
 
+// Возможно все папки с вью контроллерами стоит положить в папку UserStories
+
 class WaterViewController: UIViewController {
     
     let waterService = WaterService()
+    
+    // неочевидные названия переменных, не понятно за что они отвечают, нужно что-то типа backgroundCycleLayer и foregroundCycleLayer
     let mainShapeLayer = CAShapeLayer()
     let secondShapeLayer = CAShapeLayer()
     
+    // нужно вынести в отдельный файл UIColor+Design
     let colorAqua = UIColor(red: 11, green: 231, blue: 251)
     let tealColorAqua = UIColor(red: 191, green: 249, blue: 253)
     
     @IBOutlet var chartView: UIView!
     @IBOutlet var nameLabel: UILabel!
-    @IBOutlet var countWater: UILabel!
+    @IBOutlet var countWater: UILabel! //countLabel
     @IBOutlet var dateLable: UILabel!
     @IBOutlet var buttonXS: UIButton!
     @IBOutlet var buttonS: UIButton!
     @IBOutlet var buttonM: UIButton!
-    @IBOutlet var buttonYourOption: UIButton!
-    @IBOutlet var goalAmountButton: UIButton!
+    @IBOutlet var buttonYourOption: UIButton! // customValueButton
+    @IBOutlet var goalAmountButton: UIButton! // targerAmountButton
     
     @IBOutlet var volumeLabel: UILabel!
     @IBOutlet var ofLabel: UILabel!
     
+    // тут стоит добавить коментарий какие кнопки в этом массиве
     @IBOutlet var buttons: [UIButton]!
     
     let userDefaults = UserDefaults.standard
@@ -47,20 +53,20 @@ class WaterViewController: UIViewController {
         buttonXS.setTitle(Volume.xs.title, for: .normal)
         buttonS.setTitle(Volume.s.title, for: .normal)
         buttonM.setTitle(Volume.m.title, for: .normal)
-        ofLabel.text = loc("of")
-        if AppSettingsVolume.unit != .liter {
+        ofLabel.text = loc("of") // можно перенести в viewDidLoad
+        if AppSettingsVolume.unit != .liter { // лучше исползовать сравнение == по умолчанию вместо !=
             volumeLabel.text = loc("fl.oz")
         } else {
             volumeLabel.text = loc("ml")
         }
         
-        let oldMaxValue = AppSettingsVolume.unit.maxAmount
-        reloadCircle(oldMaxValue: oldMaxValue)
+        let oldMaxValue = AppSettingsVolume.unit.maxAmount // oldMaxValue -> previousMaxValue
+        reloadCircle(oldMaxValue: oldMaxValue) // oldMaxValue -> previousMaxValue
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        dateLable.text = DateHelper.formattedDate(from: waterService.currentDate())
+        dateLable.text = DateHelper.formattedDate(from: waterService.currentDate()) // можно перенести в viewDidLoad
         
         for button in buttons {
             button.makeRounded()
@@ -97,7 +103,7 @@ class WaterViewController: UIViewController {
         var volume: Volume? = nil
         if sender == buttonXS {
             volume = .xs
-            handleTap(value: volume?.value ?? 0.0)
+            handleTap(value: volume?.value ?? 0.0) // эта строка дублируется 3 раза, ее нужно вынести из всех if
         } else if sender == buttonS {
             volume = .s
             handleTap(value: volume?.value ?? 0.0)

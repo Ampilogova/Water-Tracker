@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+// стоит сделать паку models и перенести туда
 enum UnitVolume: String {
     case liter
     case ounces
@@ -28,7 +30,7 @@ enum UnitVolume: String {
     }
 }
 
-// Unit.customAmount = "user value"
+// Unit.customAmount = "user value" // можно удалить
 
 enum Volume {
     case xs     //220 //7.4

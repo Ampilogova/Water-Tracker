@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AppSettingsVolume {
+class AppSettingsVolume { // AppSettingsVolume -> AppSettings
     static var unit: UnitVolume {
         get {
             let value = UserDefaults.standard.string(forKey: #function) ?? ""

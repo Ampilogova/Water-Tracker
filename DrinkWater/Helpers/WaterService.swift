@@ -8,12 +8,16 @@
 
 import UIKit
 
+// стоит создать отдельную папку под сервисы
+
+// было бы круто написать интерфейс для этого сервиса с коментариями на английском
 class WaterService {
     
     let userDefaults = UserDefaults.standard
     
+    // возможно этот метод больше не нужен
     func printWater() {
-        let waterData = userDefaults.value(forKey: "Water")
+        let waterData = userDefaults.value(forKey: "Water") // Water лучше перенести в константу
         let dict = waterData as? [String: [String: Double]] ?? [:]
         print(dict)
     }
@@ -25,7 +29,7 @@ class WaterService {
         return dateFormatter.string(from: date)
     }
     
-    // 1. Показывать количество выпитой воды за сегодня и за определенную дату
+    // 1. Показывать количество выпитой воды за сегодня и за определенную дату // коментарий можно удалить
     func waterAmount(at date: String) -> Double {
         
         let waterData = userDefaults.value(forKey: "Water")
@@ -43,7 +47,7 @@ class WaterService {
         return waterAmount(at: currentDate())
     }
     
-    // 2. вывести текущее время. Должно получиться что то типа 15:23:44 hh:mm:ss
+    // 2. вывести текущее время. Должно получиться что то типа 15:23:44 hh:mm:ss // коментарий можно удалить
     
     func currentTime() -> String {
         let date = Date()
@@ -52,7 +56,7 @@ class WaterService {
         return dateFormatter.string(from: date)
     }
     
-    // 3. Пользователь вносит новое значение нужно его записать. Записать в текущий день по текущему времени значение
+    // 3. Пользователь вносит новое значение нужно его записать. Записать в текущий день по текущему времени значение // коментарий можно удалить
     
     func addWater(value: Double) {
         let waterData = userDefaults.value(forKey: "Water")
@@ -65,7 +69,7 @@ class WaterService {
         userDefaults.set(dict, forKey: "Water")
     }
     
-    // 4. Вывести все дни и количество выпитой воды в эти дни, Даты должны быть отсортированы по убыванию
+    // 4. Вывести все дни и количество выпитой воды в эти дни, Даты должны быть отсортированы по убыванию // коментарий можно удалить
     func history() -> [(date: String, value: Double)] {
         let waterData = userDefaults.value(forKey: "Water")
         let dict = waterData as? [String: [String: Double]] ?? [:]
@@ -84,7 +88,7 @@ class WaterService {
         return historyArray.sorted(by: { $0.date < $1.date })
     }
     
-    // 5. Показать историю выпитой воды за определенный день 
+    // 5. Показать историю выпитой воды за определенный день  // коментарий можно удалить
     
     func water(at date: String) -> [(time: String, value: Double)] {
         let waterData = userDefaults.value(forKey: "Water")

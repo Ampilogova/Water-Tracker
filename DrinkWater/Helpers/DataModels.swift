@@ -8,12 +8,14 @@
 
 import Foundation
 
+// лучше разбить на отдельные файлы и перенести в папку Models
+
 struct Weather: Codable {
     var id: Int
     var main: String
 }
 
-struct Main: Codable {
+struct Main: Codable { // старнное название
     var temp: Double = 0.0
 }
 

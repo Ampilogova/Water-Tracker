@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+// стоит сделать паку extentions и перенести туда
 extension UIColor {
     convenience init(red: Int, green: Int, blue: Int) {
         let newRed = CGFloat(red)/255

@@ -11,8 +11,8 @@ import UIKit
 class DetailHistoryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     let waterService = WaterService()
-    var detailHistory = [(time: String, value: Double)]()
-    var date = String()
+    var detailHistory = [(time: String, value: Double)]() // по идее тут заработает так: let detailHistory: [(time: String, value: Double)]
+    var date = String() // по идее тут заработает так: let date: String
     
     init(date: String) {
         super.init(nibName: nil, bundle: nil)
@@ -51,7 +51,7 @@ class DetailHistoryViewController: UIViewController, UITableViewDelegate, UITabl
         }
         let time = detailHistory[indexPath.row].time
         let value = detailHistory[indexPath.row].value
-        if AppSettingsVolume.unit != .liter {
+        if AppSettingsVolume.unit != .liter { // != vs ==
             cell.dateLabel?.text = time
             cell.valueLabel?.text = VolumeFormatter.string(from: value) + loc("fl.oz")
         } else {

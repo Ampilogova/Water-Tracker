@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+// стоит сделать паку extentions и перенести туда
 extension NSObject {
 
     public var className: String {

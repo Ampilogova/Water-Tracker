@@ -8,6 +8,7 @@
 
 import UIKit
 
+// стоит сделать паку extentions и перенести туда
 extension UIView {
     
     func makeRounded() {

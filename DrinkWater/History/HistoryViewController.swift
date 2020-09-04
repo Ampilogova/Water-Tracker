@@ -42,10 +42,10 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
         let value = history[indexPath.row].value
         let date = history[indexPath.row].date
         cell.dateLabel?.text = DateHelper.formattedDate(from: date)
-        if AppSettingsVolume.unit != .liter {
+        if AppSettingsVolume.unit != .liter { // по умолчанию лучше использовать == вместо !=
             cell.valueLabel?.text = VolumeFormatter.string(from: value) + loc("fl.oz")
-            cell.valueLabel?.font = UIFont(name: "Arial", size: 21)
-            cell.valueLabel?.textColor = UIColor(red: 172, green: 170, blue: 170)
+            cell.valueLabel?.font = UIFont(name: "Arial", size: 21) // сделать категорию для шрифта и перенести туда шрифт
+            cell.valueLabel?.textColor = UIColor(red: 172, green: 170, blue: 170) // цвет унести в категорию
 
         } else {
             cell.valueLabel?.text = VolumeFormatter.string(from: value) + loc("ml")

@@ -6,7 +6,7 @@
 //  Copyright © 2020 Tatiana Ampilogova. All rights reserved.
 //
 import UIKit
-
+// стоит сделать паку extentions и перенести туда
 public extension UIView {
     
     func pinToSuperviewCenter() {

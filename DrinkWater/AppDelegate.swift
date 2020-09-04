@@ -6,12 +6,25 @@
 //  Copyright © 2019 Tatiana Ampilogova. All rights reserved.
 //
 
+// Нужно пройтись по всем методам в проекте и проставить private где надо
+
+// Предлагаемая структура проекта:
+// UserStories
+//    Main
+//    NotificationsSettings
+//    Hystory
+//    Settings
+//  Helpers
+//  Extentions
+//  Services
+
 import UIKit
 import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
+    // Неиспользуемый код
 //    UNUserNotificationCenterDelegate
     
 //    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
@@ -26,8 +39,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //    }
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        // Неиспользуемый код
 //        UNUserNotificationCenter.current().delegate = self
         
+        // лучше вынести в отдельный метод
         let notificationenter = UNUserNotificationCenter.current()
         let options: UNAuthorizationOptions = [.alert, .sound]
         notificationenter.requestAuthorization(options: options) { (didAllow, error) in
@@ -46,6 +61,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
     }
 
+    // метод можно удалить
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
         // Called when the user discards a scene session.
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
