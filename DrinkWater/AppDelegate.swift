@@ -8,6 +8,7 @@
 
 import UIKit
 import UserNotifications
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -34,6 +35,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             if !didAllow {
                 print("User has declined notifications")
             }
+            
+            FirebaseApp.configure()
         }
         return true
     }
