@@ -10,12 +10,12 @@ import UIKit
 
 extension UIView {
     
-    func makeRounded() {
+    public  func makeRounded() {
         layer.cornerRadius = bounds.height / 2
         layer.masksToBounds = true
     }
     
-    func dropShadow() {
+    public  func dropShadow() {
         layer.masksToBounds = false
         layer.shadowColor = UIColor.black.cgColor
         layer.shadowOpacity = 0.5

@@ -23,7 +23,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         createTable()
     }
     
-    func createTable() {
+    private func createTable() {
         let settingTableView = UITableView(frame: view.bounds, style: .plain)
         settingTableView.delegate = self
         settingTableView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -48,7 +48,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         
         return cell
     }
-      func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         var viewController = UIViewController()
         if indexPath.row == 0 {
@@ -62,7 +62,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         }
     }
     
-    func showMailComposer() {
+    private func showMailComposer() {
         guard MFMailComposeViewController.canSendMail() else {
             print("Mail services are not available")
             return

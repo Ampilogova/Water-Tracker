@@ -36,3 +36,7 @@
 "8eu-6g-hzO.text" = "Today";
 
 "history" = "History";
+
+//Notifications
+"water.tracker" = "Water Tracker";
+"notice" = "Don't forget to drink a glass of water";

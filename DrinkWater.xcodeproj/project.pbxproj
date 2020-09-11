@@ -21,6 +21,7 @@
 		CE63651F23C51855006E82CE /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE63651D23C51855006E82CE /* HistoryCell.swift */; };
 		CE63652023C51855006E82CE /* HistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE63651E23C51855006E82CE /* HistoryCell.xib */; };
 		CE81E99024FDCEBE004C8A90 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE81E98F24FDCEBE004C8A90 /* NotificationService.swift */; };
+		CE81E9A42509851F004C8A90 /* UnitVolume.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE81E9A32509851F004C8A90 /* UnitVolume.swift */; };
 		CE82C4F523A026D80030561C /* WaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE82C4F423A026D80030561C /* WaterViewController.swift */; };
 		CE84B0D023C9203D00364247 /* NSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84B0CF23C9203D00364247 /* NSObject+Extensions.swift */; };
 		CE84B0D223C9244A00364247 /* VolumeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84B0D123C9244A00364247 /* VolumeFormatter.swift */; };
@@ -29,12 +30,11 @@
 		CE894CFF23D0F22100DE9140 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE894CFE23D0F22100DE9140 /* Setting.swift */; };
 		CE894D0223D0F76500DE9140 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE894D0023D0F76500DE9140 /* SettingsCell.swift */; };
 		CE894D0323D0F76500DE9140 /* SettingsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE894D0123D0F76500DE9140 /* SettingsCell.xib */; };
-		CEA858B42416F3A90041F257 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA858B32416F3A90041F257 /* DataModels.swift */; };
 		CEAC31EF23AC59DC00340371 /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAC31EE23AC59DC00340371 /* Volume.swift */; };
 		CEAC31F123BAFC3000340371 /* WaterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAC31F023BAFC3000340371 /* WaterService.swift */; };
 		CEBACC5B2408CF60003C498C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEBACC5D2408CF60003C498C /* Localizable.strings */; };
 		CEBACC622408D097003C498C /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBACC612408D097003C498C /* Localize.swift */; };
-		CEC95DF023D23D3D0091B09F /* AppSettingsVolume.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC95DEF23D23D3D0091B09F /* AppSettingsVolume.swift */; };
+		CEC95DF023D23D3D0091B09F /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC95DEF23D23D3D0091B09F /* AppSettings.swift */; };
 		CEC95DF223D65A050091B09F /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC95DF123D65A050091B09F /* DateHelper.swift */; };
 		CED6E15B23FF310E006085E2 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6E15A23FF310E006085E2 /* UIColor.swift */; };
 		CEF39DB923D0FFBD00D692A3 /* VolumeSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF39DB823D0FFBD00D692A3 /* VolumeSettingViewController.swift */; };
@@ -59,6 +59,7 @@
 		CE63651D23C51855006E82CE /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
 		CE63651E23C51855006E82CE /* HistoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryCell.xib; sourceTree = "<group>"; };
 		CE81E98F24FDCEBE004C8A90 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		CE81E9A32509851F004C8A90 /* UnitVolume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitVolume.swift; sourceTree = "<group>"; };
 		CE82C4F423A026D80030561C /* WaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterViewController.swift; sourceTree = "<group>"; };
 		CE84B0CF23C9203D00364247 /* NSObject+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extensions.swift"; sourceTree = "<group>"; };
 		CE84B0D123C9244A00364247 /* VolumeFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeFormatter.swift; sourceTree = "<group>"; };
@@ -67,13 +68,12 @@
 		CE894CFE23D0F22100DE9140 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		CE894D0023D0F76500DE9140 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 		CE894D0123D0F76500DE9140 /* SettingsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsCell.xib; sourceTree = "<group>"; };
-		CEA858B32416F3A90041F257 /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
 		CEAC31EE23AC59DC00340371 /* Volume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Volume.swift; sourceTree = "<group>"; };
 		CEAC31F023BAFC3000340371 /* WaterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterService.swift; sourceTree = "<group>"; };
 		CEBACC5C2408CF60003C498C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CEBACC5E2408CF63003C498C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CEBACC612408D097003C498C /* Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localize.swift; sourceTree = "<group>"; };
-		CEC95DEF23D23D3D0091B09F /* AppSettingsVolume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsVolume.swift; sourceTree = "<group>"; };
+		CEC95DEF23D23D3D0091B09F /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		CEC95DF123D65A050091B09F /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		CED6E15A23FF310E006085E2 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		CEF39DB823D0FFBD00D692A3 /* VolumeSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeSettingViewController.swift; sourceTree = "<group>"; };
@@ -111,11 +111,10 @@
 			children = (
 				CE3B9B9F23973177006C4BD7 /* AppDelegate.swift */,
 				CE3B9BA123973177006C4BD7 /* SceneDelegate.swift */,
-				CEF39DB623D0FCED00D692A3 /* Main */,
+				CE81E99D250978D9004C8A90 /* UserStories */,
+				CE81E9A0250979C1004C8A90 /* Services */,
 				CEF39DB723D0FD0F00D692A3 /* Helpers */,
-				CEF39DB523D0FCC100D692A3 /* History */,
-				CEBACC602408D07B003C498C /* Utils */,
-				CEF39DB423D0FC9200D692A3 /* Settings */,
+				CE81E99E25097914004C8A90 /* Extentions */,
 				CE3B9BA82397317D006C4BD7 /* Assets.xcassets */,
 				CE3B9BAA2397317D006C4BD7 /* LaunchScreen.storyboard */,
 				CE3B9BAD2397317D006C4BD7 /* Info.plist */,
@@ -124,12 +123,56 @@
 			path = DrinkWater;
 			sourceTree = "<group>";
 		};
-		CEBACC602408D07B003C498C /* Utils */ = {
+		CE81E99D250978D9004C8A90 /* UserStories */ = {
 			isa = PBXGroup;
 			children = (
+				CE81E9A225098502004C8A90 /* Models */,
+				CE81E99F2509795C004C8A90 /* NotificationsSettings */,
+				CEF39DB423D0FC9200D692A3 /* Settings */,
+				CEF39DB523D0FCC100D692A3 /* History */,
+				CEF39DB623D0FCED00D692A3 /* Main */,
+			);
+			path = UserStories;
+			sourceTree = "<group>";
+		};
+		CE81E99E25097914004C8A90 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				CE0E5F8324EF1D5C0072C64F /* UIView+Layout.swift */,
+				CE63651423C10B99006E82CE /* UIView+Extensions.swift */,
+				CED6E15A23FF310E006085E2 /* UIColor.swift */,
+				CE84B0CF23C9203D00364247 /* NSObject+Extensions.swift */,
 				CEBACC612408D097003C498C /* Localize.swift */,
 			);
-			path = Utils;
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		CE81E99F2509795C004C8A90 /* NotificationsSettings */ = {
+			isa = PBXGroup;
+			children = (
+				CE0E5F8124EEFFD50072C64F /* NotificationViewController.swift */,
+				CE0E5F8524EF24EA0072C64F /* TimeCell.swift */,
+				CE0E5F8724EF25440072C64F /* TimeCell.xib */,
+			);
+			path = NotificationsSettings;
+			sourceTree = "<group>";
+		};
+		CE81E9A0250979C1004C8A90 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CEAC31F023BAFC3000340371 /* WaterService.swift */,
+				CE81E98F24FDCEBE004C8A90 /* NotificationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CE81E9A225098502004C8A90 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE81E9A32509851F004C8A90 /* UnitVolume.swift */,
+				CEAC31EE23AC59DC00340371 /* Volume.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		CEF39DB423D0FC9200D692A3 /* Settings */ = {
@@ -138,7 +181,7 @@
 				CE894CFC23D0EE6600DE9140 /* SettingsViewController.swift */,
 				CEF39DB823D0FFBD00D692A3 /* VolumeSettingViewController.swift */,
 				CE894CFE23D0F22100DE9140 /* Setting.swift */,
-				CEC95DEF23D23D3D0091B09F /* AppSettingsVolume.swift */,
+				CEC95DEF23D23D3D0091B09F /* AppSettings.swift */,
 				CE894D0023D0F76500DE9140 /* SettingsCell.swift */,
 				CE894D0123D0F76500DE9140 /* SettingsCell.xib */,
 			);
@@ -160,9 +203,6 @@
 			isa = PBXGroup;
 			children = (
 				CE82C4F423A026D80030561C /* WaterViewController.swift */,
-				CE0E5F8124EEFFD50072C64F /* NotificationViewController.swift */,
-				CE0E5F8524EF24EA0072C64F /* TimeCell.swift */,
-				CE0E5F8724EF25440072C64F /* TimeCell.xib */,
 				CE3B9BA523973177006C4BD7 /* Main.storyboard */,
 			);
 			path = Main;
@@ -171,16 +211,8 @@
 		CEF39DB723D0FD0F00D692A3 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				CEAC31F023BAFC3000340371 /* WaterService.swift */,
-				CE81E98F24FDCEBE004C8A90 /* NotificationService.swift */,
-				CE63651423C10B99006E82CE /* UIView+Extensions.swift */,
-				CEA858B32416F3A90041F257 /* DataModels.swift */,
 				CE84B0D123C9244A00364247 /* VolumeFormatter.swift */,
-				CED6E15A23FF310E006085E2 /* UIColor.swift */,
-				CE84B0CF23C9203D00364247 /* NSObject+Extensions.swift */,
 				CEC95DF123D65A050091B09F /* DateHelper.swift */,
-				CEAC31EE23AC59DC00340371 /* Volume.swift */,
-				CE0E5F8324EF1D5C0072C64F /* UIView+Layout.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -276,11 +308,11 @@
 				CEF39DB923D0FFBD00D692A3 /* VolumeSettingViewController.swift in Sources */,
 				CEC95DF223D65A050091B09F /* DateHelper.swift in Sources */,
 				CE63651F23C51855006E82CE /* HistoryCell.swift in Sources */,
-				CEC95DF023D23D3D0091B09F /* AppSettingsVolume.swift in Sources */,
+				CEC95DF023D23D3D0091B09F /* AppSettings.swift in Sources */,
 				CEAC31EF23AC59DC00340371 /* Volume.swift in Sources */,
 				CED6E15B23FF310E006085E2 /* UIColor.swift in Sources */,
-				CEA858B42416F3A90041F257 /* DataModels.swift in Sources */,
 				CE63651823C3E163006E82CE /* HistoryViewController.swift in Sources */,
+				CE81E9A42509851F004C8A90 /* UnitVolume.swift in Sources */,
 				CE0E5F8224EEFFD50072C64F /* NotificationViewController.swift in Sources */,
 				CE84B0D623C9273E00364247 /* DetailHistoryViewController.swift in Sources */,
 				CE82C4F523A026D80030561C /* WaterViewController.swift in Sources */,

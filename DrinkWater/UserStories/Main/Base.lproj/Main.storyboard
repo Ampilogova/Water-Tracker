@@ -183,13 +183,13 @@
                         <outlet property="buttonM" destination="3Fs-sn-uje" id="GHD-U4-kEv"/>
                         <outlet property="buttonS" destination="qWp-Ol-cUo" id="m90-sj-z0f"/>
                         <outlet property="buttonXS" destination="3xY-2A-qw2" id="UHX-1z-vjb"/>
-                        <outlet property="buttonYourOption" destination="bID-MR-b9c" id="uXT-sk-V7o"/>
                         <outlet property="chartView" destination="gSa-Cd-Kmv" id="Hob-sj-tza"/>
-                        <outlet property="countWater" destination="eEg-Z8-EMU" id="1Dr-hz-KN5"/>
+                        <outlet property="countLabel" destination="eEg-Z8-EMU" id="1Dr-hz-KN5"/>
+                        <outlet property="customValueButton" destination="bID-MR-b9c" id="uXT-sk-V7o"/>
                         <outlet property="dateLable" destination="8Yh-b7-OQB" id="rmB-28-ZpV"/>
-                        <outlet property="goalAmountButton" destination="Tfm-Td-1bo" id="byU-Uc-SOy"/>
                         <outlet property="nameLabel" destination="8eu-6g-hzO" id="xOQ-wM-H7J"/>
                         <outlet property="ofLabel" destination="tqH-qQ-6Ll" id="YAl-2h-Ov1"/>
+                        <outlet property="targerAmountButton" destination="Tfm-Td-1bo" id="byU-Uc-SOy"/>
                         <outlet property="volumeLabel" destination="7QY-t0-K4J" id="xYT-EO-fNh"/>
                         <outletCollection property="buttons" destination="qWp-Ol-cUo" collectionClass="NSMutableArray" id="QXr-nd-UHT"/>
                         <outletCollection property="buttons" destination="3Fs-sn-uje" collectionClass="NSMutableArray" id="CYE-PY-8Vr"/>
