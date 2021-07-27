@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class NotificationViewController: UIViewController, UICollectionViewDelegate {
     
@@ -83,11 +84,24 @@ extension NotificationViewController: UICollectionViewDelegateFlowLayout, UIColl
             timeSet.remove(times[indexPath.row])
         }
         selectionTimeNotification()
+        convertTimeNotification()
         collectionView.reloadData()
     }
     
     private func selectionTimeNotification() {
         let array = Array(timeSet)
         userDefaults.set(array, forKey: notificationsTimesKey)
+    }
+    
+    private func convertTimeNotification() {
+        var arrayTime = [Int]()
+        let array = Array(timeSet)
+        for element in array {
+            let components = element.components(separatedBy: ":")
+            let hours = Int(components[0]) ?? 0
+            arrayTime.append(hours)
+        }
+        print(arrayTime)
+        notificationService.notificationsScheduler(hours: arrayTime)
     }
 }

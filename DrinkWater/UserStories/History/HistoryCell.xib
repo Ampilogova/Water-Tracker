@@ -17,25 +17,25 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cgb-gQ-4rJ">
-                        <rect key="frame" x="22" y="12" width="120" height="21"/>
+                        <rect key="frame" x="16" y="12" width="189" height="21"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="120" id="fkt-xp-a1w"/>
+                            <constraint firstAttribute="width" constant="189" id="fkt-xp-a1w"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                        <color key="textColor" red="0.67450980390000004" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" red="0.45098039220000002" green="0.45098039220000002" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7BR-0g-7FO">
-                        <rect key="frame" x="249.5" y="12" width="50.5" height="21"/>
-                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                        <color key="textColor" red="0.67450980390000004" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <rect key="frame" x="252" y="12" width="48" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" red="0.45098039220000002" green="0.45098039220000002" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="7BR-0g-7FO" secondAttribute="bottom" constant="11" id="BwG-d3-Zhs"/>
                     <constraint firstItem="Cgb-gQ-4rJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="HFT-Is-I8G"/>
-                    <constraint firstItem="Cgb-gQ-4rJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="22" id="MLd-uG-Tvr"/>
+                    <constraint firstItem="Cgb-gQ-4rJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="MLd-uG-Tvr"/>
                     <constraint firstAttribute="bottom" secondItem="Cgb-gQ-4rJ" secondAttribute="bottom" constant="11" id="OCu-OC-qnb"/>
                     <constraint firstItem="7BR-0g-7FO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="Zbi-fD-I5A"/>
                     <constraint firstAttribute="trailing" secondItem="7BR-0g-7FO" secondAttribute="trailing" constant="20" id="kPL-0K-f5P"/>

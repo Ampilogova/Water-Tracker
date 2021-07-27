@@ -17,12 +17,12 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7uO-jr-Zd8">
-                        <rect key="frame" x="16" y="12" width="200" height="21"/>
+                        <rect key="frame" x="16" y="12" width="270" height="21"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="200" id="20p-8R-dWg"/>
+                            <constraint firstAttribute="width" constant="270" id="20p-8R-dWg"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                        <color key="textColor" red="0.67450980390000004" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" red="0.45098039220000002" green="0.45098039220000002" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
@@ -36,7 +36,7 @@
             <connections>
                 <outlet property="nameSettingLabel" destination="7uO-jr-Zd8" id="Fie-WY-cla"/>
             </connections>
-            <point key="canvasLocation" x="139" y="95"/>
+            <point key="canvasLocation" x="137.68115942028987" y="94.419642857142847"/>
         </tableViewCell>
     </objects>
 </document>

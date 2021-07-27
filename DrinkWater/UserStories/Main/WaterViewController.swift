@@ -24,6 +24,7 @@ class WaterViewController: UIViewController {
     @IBOutlet var buttonM: UIButton!
     @IBOutlet var customValueButton: UIButton!
     @IBOutlet var targerAmountButton: UIButton!
+    @IBOutlet var undoButton: UIButton!
     
     @IBOutlet var volumeLabel: UILabel!
     @IBOutlet var ofLabel: UILabel!
@@ -34,8 +35,10 @@ class WaterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        nameLabel.text = loc("hello")
         ofLabel.text = loc("of")
         dateLable.text = DateHelper.formattedDate(from: waterService.currentDate())
+        createUndoButton()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -63,6 +66,12 @@ class WaterViewController: UIViewController {
         }
         createSecondCircle()
         createMainCircle()
+    }
+    func createUndoButton() {
+        undoButton.makeRounded()
+        undoButton.setTitle(loc("undo"), for: .normal)
+        undoButton.layer.borderWidth = 1
+        undoButton.layer.borderColor = UIColor.aqua.cgColor
     }
     
     func createMainCircle() {
@@ -122,6 +131,13 @@ class WaterViewController: UIViewController {
     
     func updateAmountGoal() {
         targerAmountButton.setTitle(VolumeFormatter.string(from: AppSettings.unit.maxAmount), for: .normal) 
+    }
+    
+    @IBAction func undoAction(_ sender: Any) {
+        waterService.undo()
+        updateVolumeLabel()
+        let previousMaxValue = AppSettings.unit.maxAmount
+        reloadCircle(oldMaxValue: previousMaxValue)
     }
     
     func showCustomValueAlert(message: String) {

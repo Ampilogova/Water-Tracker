@@ -20,10 +20,12 @@
 "celsius" = "Цельсия";
 "fahrenheit" = "Фаренгейт";
 "of" = "от ";
+"hello" = "Привет!";
 
 //Confirm
 "confirm.ok" = "Ок";
 "confirm.cancel" = "Отмена";
+"undo" = "Отменить";
 
 //Notice
 "alarm" = "Предупреждение";

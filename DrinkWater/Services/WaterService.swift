@@ -75,7 +75,7 @@ class WaterService {
             historyArray.append((day, result))
         }
         
-        return historyArray.sorted(by: { $0.date < $1.date })
+        return historyArray.sorted(by: { $01.date < $0.date })
     }
     
     // 5. Show the history of the water you drink for a specific day
@@ -92,14 +92,25 @@ class WaterService {
         
         return result.sorted(by: { $0.time < $1.time })
     }
-
+    
     public  func remove()  {
         userDefaults.removeObject(forKey: "Water")
     }
     
-    public  func isEmpty() -> Bool {
-        if userDefaults.value(forKey: "Water") != nil {
-            return false
+    public func undo() {
+        let waterData = userDefaults.value(forKey: "Water")
+        var dict = waterData as? [String: [String: Double]] ?? [:]
+        let dataKey = currentDate()
+        var values = dict[dataKey] ?? [:]
+        let keys = values.enumerated().map({ $0.element.key }).sorted(by: { $0 < $1 })
+        values.removeValue(forKey: keys.last ?? "")
+        dict[dataKey] = values
+        userDefaults.set(dict, forKey: "Water")
+    }
+
+public  func isEmpty() -> Bool {
+    if userDefaults.value(forKey: "Water") != nil {
+        return false
         } else {
             return true
         }

@@ -16,18 +16,18 @@ enum Volume {
     var value: Double {
         switch (self, AppSettings.unit) {
         case (.xs, .liter): return 220
-        case (.xs, .ounces): return 7.4
+        case (.xs, .ounces): return 8
         case (.s, .liter): return 330
-        case (.s, .ounces): return 11.2
+        case (.s, .ounces): return 12
         case (.m, .liter): return 500
-        case (.m, .ounces): return 17
+        case (.m, .ounces): return 16
         }
     }
     
     var title: String {
         switch AppSettings.unit {
         case (.liter): return VolumeFormatter.string(from: value) + loc("ml")
-        case (.ounces): return String(self.value) + loc("fl.oz")
+        case (.ounces): return VolumeFormatter.string(from: value) + loc("fl.oz")
         }
     }
     

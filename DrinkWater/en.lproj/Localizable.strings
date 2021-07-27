@@ -22,10 +22,12 @@
 "celsius" = "Celsius";
 "fahrenheit" = "Fahrenheit";
 "of" = "of ";
+"hello" = "Hello!";
 
 //Confirm
 "confirm.ok" = "Ok";
 "confirm.cancel" = "Cancel";
+"undo" = "Undo";
 
 //Notice
 "alarm" = "Notice";
