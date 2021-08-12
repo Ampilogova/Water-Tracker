@@ -17,7 +17,7 @@ class TimeCell: UICollectionViewCell {
         
         selectionView.makeRounded()
         selectionView.layer.borderWidth = 1
-        selectionView.layer.borderColor = UIColor(red: 11, green: 231, blue: 251).cgColor
+        selectionView.layer.borderColor = UIColor.aqua.cgColor
     }
     
 }
