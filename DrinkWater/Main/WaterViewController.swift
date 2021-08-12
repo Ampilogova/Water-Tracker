@@ -14,8 +14,7 @@ class WaterViewController: UIViewController {
     let waterService = WaterService()
     let foregroundCycleLayer = CAShapeLayer()
     let backgroundCycleLayer = CAShapeLayer()
-//    let colorAqua = UIColor(red: 11, green: 231, blue: 251)
-//    let tealColorAqua = UIColor(red: 191, green: 249, blue: 253)
+
     
     @IBOutlet var chartView: UIView!
     @IBOutlet var nameLabel: UILabel!
