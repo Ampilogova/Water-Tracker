@@ -6,14 +6,13 @@
 //  Copyright © 2021 Tatiana Ampilogova. All rights reserved.
 //
 
-
 import UIKit
 
 enum Volume {
     case xs
     case s
     case m
-    
+
     var value: Double {
         switch (self, AppSettings.unit) {
         case (.xs, .liter): return 220

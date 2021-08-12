@@ -12,7 +12,9 @@
 		CE0E5F8424EF1D5C0072C64F /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0E5F8324EF1D5C0072C64F /* UIView+Layout.swift */; };
 		CE0E5F8624EF24EA0072C64F /* TimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0E5F8524EF24EA0072C64F /* TimeCell.swift */; };
 		CE0E5F8824EF25440072C64F /* TimeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0E5F8724EF25440072C64F /* TimeCell.xib */; };
-		CE0F103C26C5B66A00750DB7 /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F103B26C5B66A00750DB7 /* Volume.swift */; };
+
+		CE0F103E26C5BF9300750DB7 /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F103D26C5BF9300750DB7 /* Volume.swift */; };
+
 		CE3B9BA023973177006C4BD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3B9B9F23973177006C4BD7 /* AppDelegate.swift */; };
 		CE3B9BA223973177006C4BD7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3B9BA123973177006C4BD7 /* SceneDelegate.swift */; };
 		CE3B9BA723973177006C4BD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3B9BA523973177006C4BD7 /* Main.storyboard */; };
@@ -52,7 +54,9 @@
 		CE0E5F8324EF1D5C0072C64F /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
 		CE0E5F8524EF24EA0072C64F /* TimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCell.swift; sourceTree = "<group>"; };
 		CE0E5F8724EF25440072C64F /* TimeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeCell.xib; sourceTree = "<group>"; };
-		CE0F103B26C5B66A00750DB7 /* Volume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Volume.swift; sourceTree = "<group>"; };
+
+		CE0F103D26C5BF9300750DB7 /* Volume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Volume.swift; sourceTree = "<group>"; };
+
 		CE3B9B9C23973177006C4BD7 /* DrinkWater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrinkWater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3B9B9F23973177006C4BD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE3B9BA123973177006C4BD7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -201,6 +205,7 @@
 				CEC95DF123D65A050091B09F /* DateHelper.swift */,
 				CEAC31EE23AC59DC00340371 /* UnitVolume.swift */,
 				CE0F103B26C5B66A00750DB7 /* Volume.swift */,
+
 				CE0E5F8324EF1D5C0072C64F /* UIView+Layout.swift */,
 			);
 			path = Helpers;
@@ -347,6 +352,7 @@
 				CE0E5F8424EF1D5C0072C64F /* UIView+Layout.swift in Sources */,
 				CE84B0D223C9244A00364247 /* VolumeFormatter.swift in Sources */,
 				CE0F103C26C5B66A00750DB7 /* Volume.swift in Sources */,
+
 				CEBACC622408D097003C498C /* Localize.swift in Sources */,
 				CEAC31F123BAFC3000340371 /* WaterService.swift in Sources */,
 				CEF39DB923D0FFBD00D692A3 /* VolumeSettingViewController.swift in Sources */,
@@ -354,7 +360,8 @@
 				CE63651F23C51855006E82CE /* HistoryCell.swift in Sources */,
 
 				CEC95DF023D23D3D0091B09F /* AppSettings.swift in Sources */,
-				CEAC31EF23AC59DC00340371 /* Volume.swift in Sources */,
+
+				CEAC31EF23AC59DC00340371 /* UnitVolume.swift in Sources */,
 
 				CED6E15B23FF310E006085E2 /* UIColor.swift in Sources */,
 				CEA858B42416F3A90041F257 /* DataModels.swift in Sources */,
