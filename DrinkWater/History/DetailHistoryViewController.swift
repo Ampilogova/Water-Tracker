@@ -52,7 +52,7 @@ class DetailHistoryViewController: UIViewController, UITableViewDelegate, UITabl
         let time = detailHistory[indexPath.row].time
         let value = detailHistory[indexPath.row].value
       
-        if AppSettings.unit != .liter {
+        if AppSettings.unit == .liter {
             cell.dateLabel?.text = time
             cell.valueLabel?.text = VolumeFormatter.string(from: value) + loc("ml")
         } else {

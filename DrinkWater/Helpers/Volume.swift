@@ -27,7 +27,7 @@ enum Volume {
     var title: String {
         switch AppSettings.unit {
         case (.liter): return VolumeFormatter.string(from: value) + loc("ml")
-        case (.ounces): return String(self.value) + loc("fl.oz")
+        case (.ounces): return VolumeFormatter.string(from: value) + loc("fl.oz")
         }
     }
     

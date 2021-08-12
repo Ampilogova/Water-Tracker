@@ -42,7 +42,7 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
         let value = history[indexPath.row].value
         let date = history[indexPath.row].date
         cell.dateLabel?.text = DateHelper.formattedDate(from: date)
-        if AppSettingsVolume.unit == .liter {
+        if AppSettings.unit == .liter {
             cell.valueLabel?.text = VolumeFormatter.string(from: value) + loc("ml")
         } else {
             cell.valueLabel?.text = VolumeFormatter.string(from: value) + loc("fl.oz")
