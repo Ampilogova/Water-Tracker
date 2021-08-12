@@ -1,48 +1,27 @@
 //
-//  Unit:Volume.swift
+//  Volume.swift
 //  DrinkWater
 //
-//  Created by Tatiana Ampilogova on 12/19/19.
-//  Copyright © 2019 Tatiana Ampilogova. All rights reserved.
+//  Created by Tatiana Ampilogova on 8/12/21.
+//  Copyright © 2021 Tatiana Ampilogova. All rights reserved.
 //
+
 
 import UIKit
 
-enum UnitVolume: String {
-    case liter
-    case ounces
-    
-    var maxAmount: Double {
-        if UnitVolume.customAmount != 0.0 {
-            return UnitVolume.customAmount
-        }
-        
-        switch self {
-        case (.liter): return 2000
-        case (.ounces): return 64
-        }
-    }
-    static var customAmount: Double {
-        get { return UserDefaults.standard.double(forKey: #function) }
-        set { UserDefaults.standard.set(newValue, forKey: #function) }
-    }
-}
-
-// Unit.customAmount = "user value"
-
 enum Volume {
-    case xs     //220 //7.4
-    case s      //330 //11.2
-    case m      //500 //17
-
+    case xs
+    case s
+    case m
+    
     var value: Double {
         switch (self, AppSettings.unit) {
         case (.xs, .liter): return 220
-        case (.xs, .ounces): return 7.4
+        case (.xs, .ounces): return 8
         case (.s, .liter): return 330
-        case (.s, .ounces): return 11.2
+        case (.s, .ounces): return 12
         case (.m, .liter): return 500
-        case (.m, .ounces): return 17
+        case (.m, .ounces): return 16
         }
     }
     

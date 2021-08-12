@@ -1,16 +1,17 @@
 /* 
-  Localizable.strings
-  DrinkWater
-
-  Created by Tatiana Ampilogova on 2/27/20.
-  Copyright © 2020 Tatiana Ampilogova. All rights reserved.
-*/
-// Settitngs
+ Localizable.strings
+ DrinkWater
+ 
+ Created by Tatiana Ampilogova on 2/27/20.
+ Copyright © 2020 Tatiana Ampilogova. All rights reserved.
+ */
+// Settings
 "volume" = "Объем";
 "notifications" = "Уведомления";
 "send.feedback" = "Написать разработчику";
 "settings" = "Настройки";
 "temperature.unit" = "Единица измерения температуры";
+
 
 //Unit
 "ounces" = "Унции";
@@ -20,10 +21,13 @@
 "celsius" = "Цельсия";
 "fahrenheit" = "Фаренгейт";
 "of" = "от ";
+"hello" = "Привет!";
 
 //Confirm
 "confirm.ok" = "Ок";
 "confirm.cancel" = "Отмена";
+"undo" = "Отменить";
+
 
 //Notice
 "alarm" = "Предупреждение";
@@ -34,3 +38,7 @@
 "8eu-6g-hzO.text" = "Сегодня";
 
 "history" = "История";
+
+//Notifications
+"water.tracker" = "Water Tracker";
+"notice" = "Не забудьте выпить стакан воды";

@@ -11,13 +11,13 @@ import UIKit
 class DetailHistoryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     let waterService = WaterService()
-    var detailHistory = [(time: String, value: Double)]()
-    var date = String()
+    var detailHistory: [(time: String, value: Double)]
+    var date: String
     
     init(date: String) {
-        super.init(nibName: nil, bundle: nil)
         detailHistory = WaterService().water(at: date)
         self.date = DateHelper.formattedDate(from: date)
+        super.init(nibName: nil, bundle: nil)
     }
     
     required init?(coder: NSCoder) {
@@ -30,7 +30,7 @@ class DetailHistoryViewController: UIViewController, UITableViewDelegate, UITabl
         title = date
     }
     
-    func createTable() {
+    private func createTable() {
         let detailHistoryTableView = UITableView(frame: view.bounds, style: .plain)
         detailHistoryTableView.delegate = self
         detailHistoryTableView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -51,12 +51,13 @@ class DetailHistoryViewController: UIViewController, UITableViewDelegate, UITabl
         }
         let time = detailHistory[indexPath.row].time
         let value = detailHistory[indexPath.row].value
+      
         if AppSettings.unit != .liter {
             cell.dateLabel?.text = time
-            cell.valueLabel?.text = VolumeFormatter.string(from: value) + loc("fl.oz")
+            cell.valueLabel?.text = VolumeFormatter.string(from: value) + loc("ml")
         } else {
             cell.dateLabel?.text = time
-            cell.valueLabel?.text = VolumeFormatter.string(from: value) + loc("ml")
+            cell.valueLabel?.text = VolumeFormatter.string(from: value) + loc("fl.oz")
         }
         return cell
     }

@@ -12,6 +12,7 @@
 		CE0E5F8424EF1D5C0072C64F /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0E5F8324EF1D5C0072C64F /* UIView+Layout.swift */; };
 		CE0E5F8624EF24EA0072C64F /* TimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0E5F8524EF24EA0072C64F /* TimeCell.swift */; };
 		CE0E5F8824EF25440072C64F /* TimeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0E5F8724EF25440072C64F /* TimeCell.xib */; };
+		CE0F103C26C5B66A00750DB7 /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F103B26C5B66A00750DB7 /* Volume.swift */; };
 		CE3B9BA023973177006C4BD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3B9B9F23973177006C4BD7 /* AppDelegate.swift */; };
 		CE3B9BA223973177006C4BD7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3B9BA123973177006C4BD7 /* SceneDelegate.swift */; };
 		CE3B9BA723973177006C4BD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3B9BA523973177006C4BD7 /* Main.storyboard */; };
@@ -32,7 +33,7 @@
 		CE894D0223D0F76500DE9140 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE894D0023D0F76500DE9140 /* SettingsCell.swift */; };
 		CE894D0323D0F76500DE9140 /* SettingsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE894D0123D0F76500DE9140 /* SettingsCell.xib */; };
 		CEA858B42416F3A90041F257 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA858B32416F3A90041F257 /* DataModels.swift */; };
-		CEAC31EF23AC59DC00340371 /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAC31EE23AC59DC00340371 /* Volume.swift */; };
+		CEAC31EF23AC59DC00340371 /* UnitVolume.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAC31EE23AC59DC00340371 /* UnitVolume.swift */; };
 		CEAC31F123BAFC3000340371 /* WaterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAC31F023BAFC3000340371 /* WaterService.swift */; };
 		CEBACC5B2408CF60003C498C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEBACC5D2408CF60003C498C /* Localizable.strings */; };
 		CEBACC622408D097003C498C /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBACC612408D097003C498C /* Localize.swift */; };
@@ -51,6 +52,7 @@
 		CE0E5F8324EF1D5C0072C64F /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
 		CE0E5F8524EF24EA0072C64F /* TimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCell.swift; sourceTree = "<group>"; };
 		CE0E5F8724EF25440072C64F /* TimeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeCell.xib; sourceTree = "<group>"; };
+		CE0F103B26C5B66A00750DB7 /* Volume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Volume.swift; sourceTree = "<group>"; };
 		CE3B9B9C23973177006C4BD7 /* DrinkWater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrinkWater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3B9B9F23973177006C4BD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE3B9BA123973177006C4BD7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,7 +75,7 @@
 		CE894D0023D0F76500DE9140 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 		CE894D0123D0F76500DE9140 /* SettingsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsCell.xib; sourceTree = "<group>"; };
 		CEA858B32416F3A90041F257 /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
-		CEAC31EE23AC59DC00340371 /* Volume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Volume.swift; sourceTree = "<group>"; };
+		CEAC31EE23AC59DC00340371 /* UnitVolume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitVolume.swift; sourceTree = "<group>"; };
 		CEAC31F023BAFC3000340371 /* WaterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterService.swift; sourceTree = "<group>"; };
 		CEBACC5C2408CF60003C498C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CEBACC5E2408CF63003C498C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -197,7 +199,8 @@
 				CED6E15A23FF310E006085E2 /* UIColor.swift */,
 				CE84B0CF23C9203D00364247 /* NSObject+Extensions.swift */,
 				CEC95DF123D65A050091B09F /* DateHelper.swift */,
-				CEAC31EE23AC59DC00340371 /* Volume.swift */,
+				CEAC31EE23AC59DC00340371 /* UnitVolume.swift */,
+				CE0F103B26C5B66A00750DB7 /* Volume.swift */,
 				CE0E5F8324EF1D5C0072C64F /* UIView+Layout.swift */,
 			);
 			path = Helpers;
@@ -343,13 +346,16 @@
 				CE3B9BA223973177006C4BD7 /* SceneDelegate.swift in Sources */,
 				CE0E5F8424EF1D5C0072C64F /* UIView+Layout.swift in Sources */,
 				CE84B0D223C9244A00364247 /* VolumeFormatter.swift in Sources */,
+				CE0F103C26C5B66A00750DB7 /* Volume.swift in Sources */,
 				CEBACC622408D097003C498C /* Localize.swift in Sources */,
 				CEAC31F123BAFC3000340371 /* WaterService.swift in Sources */,
 				CEF39DB923D0FFBD00D692A3 /* VolumeSettingViewController.swift in Sources */,
 				CEC95DF223D65A050091B09F /* DateHelper.swift in Sources */,
 				CE63651F23C51855006E82CE /* HistoryCell.swift in Sources */,
+
 				CEC95DF023D23D3D0091B09F /* AppSettings.swift in Sources */,
 				CEAC31EF23AC59DC00340371 /* Volume.swift in Sources */,
+
 				CED6E15B23FF310E006085E2 /* UIColor.swift in Sources */,
 				CEA858B42416F3A90041F257 /* DataModels.swift in Sources */,
 				CE63651823C3E163006E82CE /* HistoryViewController.swift in Sources */,

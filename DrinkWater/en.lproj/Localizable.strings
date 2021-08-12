@@ -7,7 +7,7 @@
 */
 
 
-// Settitngs
+// Settings
 "volume" = "Volume";
 "notifications" = "Notifications";
 "send.feedback" = "Send feedback";
@@ -22,10 +22,12 @@
 "celsius" = "Celsius";
 "fahrenheit" = "Fahrenheit";
 "of" = "of ";
+"hello" = "Hello!";
 
 //Confirm
 "confirm.ok" = "Ok";
 "confirm.cancel" = "Cancel";
+"undo" = "Undo";
 
 //Notice
 "alarm" = "Notice";
@@ -36,3 +38,7 @@
 "8eu-6g-hzO.text" = "Today";
 
 "history" = "History";
+
+//Notifications
+ "water.tracker" = "Water Tracker";
+ "notice" = "Don't forget to drink a glass of water";
