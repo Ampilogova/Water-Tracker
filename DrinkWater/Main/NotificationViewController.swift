@@ -55,7 +55,7 @@ extension NotificationViewController: UICollectionViewDelegateFlowLayout, UIColl
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCell", for: indexPath) as? TimeCell
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier:  TimeCell.className, for: indexPath) as? TimeCell
             else {
                 preconditionFailure("TimeCell can't be dequeued")
         }

@@ -61,7 +61,6 @@ class WaterViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-//        dateLable.text = DateHelper.formattedDate(from: waterService.currentDate())
         for button in buttons {
             button.makeRounded()
             button.dropShadow()
@@ -134,6 +133,14 @@ class WaterViewController: UIViewController {
     
     func updateAmountGoal() {
         targetAmountButton.setTitle(VolumeFormatter.string(from: AppSettings.unit.maxAmount), for: .normal) 
+    }
+    
+    
+    @IBAction func undoAction(_ sender: Any) {
+        waterService.undo()
+        updateVolumeLabel()
+        let previousMaxValue = AppSettings.unit.maxAmount
+        reloadCircle(oldMaxValue: previousMaxValue)
     }
     
     func showCustomValueAlert(message: String) {
