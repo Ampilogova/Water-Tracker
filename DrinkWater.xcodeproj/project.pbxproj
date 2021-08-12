@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -36,7 +36,7 @@
 		CEAC31F123BAFC3000340371 /* WaterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAC31F023BAFC3000340371 /* WaterService.swift */; };
 		CEBACC5B2408CF60003C498C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEBACC5D2408CF60003C498C /* Localizable.strings */; };
 		CEBACC622408D097003C498C /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBACC612408D097003C498C /* Localize.swift */; };
-		CEC95DF023D23D3D0091B09F /* AppSettingsVolume.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC95DEF23D23D3D0091B09F /* AppSettingsVolume.swift */; };
+		CEC95DF023D23D3D0091B09F /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC95DEF23D23D3D0091B09F /* AppSettings.swift */; };
 		CEC95DF223D65A050091B09F /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC95DF123D65A050091B09F /* DateHelper.swift */; };
 		CED6E15B23FF310E006085E2 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6E15A23FF310E006085E2 /* UIColor.swift */; };
 		CEF39DB923D0FFBD00D692A3 /* VolumeSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF39DB823D0FFBD00D692A3 /* VolumeSettingViewController.swift */; };
@@ -78,7 +78,7 @@
 		CEBACC5C2408CF60003C498C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CEBACC5E2408CF63003C498C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CEBACC612408D097003C498C /* Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localize.swift; sourceTree = "<group>"; };
-		CEC95DEF23D23D3D0091B09F /* AppSettingsVolume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsVolume.swift; sourceTree = "<group>"; };
+		CEC95DEF23D23D3D0091B09F /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		CEC95DF123D65A050091B09F /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		CED6E15A23FF310E006085E2 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		CEF39DB823D0FFBD00D692A3 /* VolumeSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeSettingViewController.swift; sourceTree = "<group>"; };
@@ -156,7 +156,7 @@
 				CE894CFC23D0EE6600DE9140 /* SettingsViewController.swift */,
 				CEF39DB823D0FFBD00D692A3 /* VolumeSettingViewController.swift */,
 				CE894CFE23D0F22100DE9140 /* Setting.swift */,
-				CEC95DEF23D23D3D0091B09F /* AppSettingsVolume.swift */,
+				CEC95DEF23D23D3D0091B09F /* AppSettings.swift */,
 				CE894D0023D0F76500DE9140 /* SettingsCell.swift */,
 				CE894D0123D0F76500DE9140 /* SettingsCell.xib */,
 			);
@@ -209,7 +209,6 @@
 				C13F635869ED86EB3854AB53 /* Pods-DrinkWater.debug.xcconfig */,
 				180B6BEE6728D3B1C762B29D /* Pods-DrinkWater.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -349,7 +348,7 @@
 				CEF39DB923D0FFBD00D692A3 /* VolumeSettingViewController.swift in Sources */,
 				CEC95DF223D65A050091B09F /* DateHelper.swift in Sources */,
 				CE63651F23C51855006E82CE /* HistoryCell.swift in Sources */,
-				CEC95DF023D23D3D0091B09F /* AppSettingsVolume.swift in Sources */,
+				CEC95DF023D23D3D0091B09F /* AppSettings.swift in Sources */,
 				CEAC31EF23AC59DC00340371 /* Volume.swift in Sources */,
 				CED6E15B23FF310E006085E2 /* UIColor.swift in Sources */,
 				CEA858B42416F3A90041F257 /* DataModels.swift in Sources */,

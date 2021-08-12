@@ -36,7 +36,7 @@ enum Volume {
     case m      //500 //17
 
     var value: Double {
-        switch (self, AppSettingsVolume.unit) {
+        switch (self, AppSettings.unit) {
         case (.xs, .liter): return 220
         case (.xs, .ounces): return 7.4
         case (.s, .liter): return 330
@@ -47,7 +47,7 @@ enum Volume {
     }
     
     var title: String {
-        switch AppSettingsVolume.unit {
+        switch AppSettings.unit {
         case (.liter): return VolumeFormatter.string(from: value) + loc("ml")
         case (.ounces): return String(self.value) + loc("fl.oz")
         }
