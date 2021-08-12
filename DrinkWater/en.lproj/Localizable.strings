@@ -22,6 +22,12 @@
 "celsius" = "Celsius";
 "fahrenheit" = "Fahrenheit";
 "of" = "of ";
+<<<<<<< Updated upstream
+=======
+"hello" = "Hello!";
+"water.is.life" = " Water is life!";
+"last.drink" = "Last drink";
+>>>>>>> Stashed changes
 
 //Confirm
 "confirm.ok" = "Ok";

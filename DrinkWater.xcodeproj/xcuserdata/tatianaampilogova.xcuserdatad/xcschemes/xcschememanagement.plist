@@ -9,6 +9,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+<<<<<<< Updated upstream
+=======
+		<key>DrinkWaterWidgetExtension.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>WidgetWaterTrackerExtension.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+>>>>>>> Stashed changes
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>

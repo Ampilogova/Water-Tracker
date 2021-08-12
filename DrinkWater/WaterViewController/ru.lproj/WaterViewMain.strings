@@ -1,0 +1,21 @@
+
+/* Class = "UIButton"; normalTitle = "500ml"; ObjectID = "3Fs-sn-uje"; */
+"3Fs-sn-uje.normalTitle" = "500ml";
+
+/* Class = "UIButton"; normalTitle = "200ml"; ObjectID = "3xY-2A-qw2"; */
+"3xY-2A-qw2.normalTitle" = "200ml";
+
+/* Class = "UILabel"; text = "Date"; ObjectID = "8Yh-b7-OQB"; */
+"8Yh-b7-OQB.text" = "Date";
+
+/* Class = "UILabel"; text = "Today"; ObjectID = "8eu-6g-hzO"; */
+"8eu-6g-hzO.text" = "Сегодня";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Tfm-Td-1bo"; */
+"Tfm-Td-1bo.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "eEg-Z8-EMU"; */
+"eEg-Z8-EMU.text" = "0";
+
+/* Class = "UIButton"; normalTitle = "400ml"; ObjectID = "qWp-Ol-cUo"; */
+"qWp-Ol-cUo.normalTitle" = "400ml";

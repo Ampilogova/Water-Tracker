@@ -20,6 +20,12 @@
 "celsius" = "Цельсия";
 "fahrenheit" = "Фаренгейт";
 "of" = "от ";
+<<<<<<< Updated upstream
+=======
+"hello" = "Привет!";
+"water.is.life" = " Вода - жизнь!";
+"last.drink" = "Последний раз вы пили в";
+>>>>>>> Stashed changes
 
 //Confirm
 "confirm.ok" = "Ок";
@@ -34,3 +40,10 @@
 "8eu-6g-hzO.text" = "Сегодня";
 
 "history" = "История";
+<<<<<<< Updated upstream
+=======
+
+//Notifications
+"water.tracker" = "Water Tracker";
+"notice" = "Не забудьте выпить стакан воды";
+>>>>>>> Stashed changes

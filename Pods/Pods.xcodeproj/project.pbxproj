@@ -6,6 +6,7 @@
 	objectVersion = 50;
 	objects = {
 
+<<<<<<< Updated upstream
 /* Begin PBXAggregateTarget section */
 		072CEA044D2EF26F03496D5996BBF59F /* Firebase */ = {
 			isa = PBXAggregateTarget;
@@ -998,12 +999,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3379436EEF6A4AB006A76224F00D2C5 /* Foundation.framework in Frameworks */,
+=======
+/* Begin PBXBuildFile section */
+		7185B720A4D67DAA3EABF2CB04BB1BF1 /* Pods-DrinkWater-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F71B91E7577CFAD53D19D27BC8D1A278 /* Pods-DrinkWater-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8151D7BB2061F15D10C91426AD063902 /* Pods-DrinkWaterWidgetExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C8F17A6AD898DF69ED52DA9DCE366E0 /* Pods-DrinkWaterWidgetExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87D0173F1D99C9A7DB30282FB8B94E0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		CBCEF20F3C2446C2707014210286CDAB /* Pods-DrinkWater-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A86C2CF51A02B63648086CFC82A4516F /* Pods-DrinkWater-dummy.m */; };
+		E80578D867DA436A3AC79BE8549ECD3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		FB37C08C16EE37DB6F3367E1728E4DBD /* Pods-DrinkWaterWidgetExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84545A3A29405D588DB68C70F8FB2C4D /* Pods-DrinkWaterWidgetExtension-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		23411EFF05B421F71A5F48A09A0CA9C9 /* Pods-DrinkWater-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DrinkWater-Info.plist"; sourceTree = "<group>"; };
+		4C8F17A6AD898DF69ED52DA9DCE366E0 /* Pods-DrinkWaterWidgetExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DrinkWaterWidgetExtension-umbrella.h"; sourceTree = "<group>"; };
+		4C8F766E0F7B84B03E2A597EE74768BF /* Pods-DrinkWaterWidgetExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DrinkWaterWidgetExtension.release.xcconfig"; sourceTree = "<group>"; };
+		54A830EF3AEAAB0C5D5FBA34A025F9AC /* Pods_DrinkWaterWidgetExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DrinkWaterWidgetExtension.framework; path = "Pods-DrinkWaterWidgetExtension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		704788278A5BA120DA60E75191DB631F /* Pods_DrinkWater.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DrinkWater.framework; path = "Pods-DrinkWater.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		84545A3A29405D588DB68C70F8FB2C4D /* Pods-DrinkWaterWidgetExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DrinkWaterWidgetExtension-dummy.m"; sourceTree = "<group>"; };
+		95E69FD19C327F18116984137DDAD50B /* Pods-DrinkWaterWidgetExtension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DrinkWaterWidgetExtension-Info.plist"; sourceTree = "<group>"; };
+		963C4BD3CB9521D9D5F4A953CFCA44D3 /* Pods-DrinkWater-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DrinkWater-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9C105EB5483B138AD94C95EFF642BA9B /* Pods-DrinkWaterWidgetExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DrinkWaterWidgetExtension.modulemap"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EAB98CB48B6806ECE3F6EB1CD8B1EC6 /* Pods-DrinkWaterWidgetExtension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DrinkWaterWidgetExtension-acknowledgements.plist"; sourceTree = "<group>"; };
+		A86C2CF51A02B63648086CFC82A4516F /* Pods-DrinkWater-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DrinkWater-dummy.m"; sourceTree = "<group>"; };
+		B544B1166DF4A15296C12F688B8D056E /* Pods-DrinkWater-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DrinkWater-acknowledgements.plist"; sourceTree = "<group>"; };
+		B8F633823707678F38ED875C324D37A3 /* Pods-DrinkWater.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DrinkWater.release.xcconfig"; sourceTree = "<group>"; };
+		C65E6CBA96B0ED7CF58730152FD3D440 /* Pods-DrinkWater.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DrinkWater.debug.xcconfig"; sourceTree = "<group>"; };
+		CE76A2BB5B792EB585D6F561FA25E0CD /* Pods-DrinkWaterWidgetExtension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DrinkWaterWidgetExtension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DFFFB7387B35873D1A0E3A5098F11314 /* Pods-DrinkWater.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DrinkWater.modulemap"; sourceTree = "<group>"; };
+		F71B91E7577CFAD53D19D27BC8D1A278 /* Pods-DrinkWater-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DrinkWater-umbrella.h"; sourceTree = "<group>"; };
+		FC4776D09F66D185279D967E461A2FF2 /* Pods-DrinkWaterWidgetExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DrinkWaterWidgetExtension.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		67F5CA19253087E7912FE36B38FA09B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87D0173F1D99C9A7DB30282FB8B94E0B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9CFFD788803B52375F670C36E4FC417 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E80578D867DA436A3AC79BE8549ECD3A /* Foundation.framework in Frameworks */,
+>>>>>>> Stashed changes
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+<<<<<<< Updated upstream
 		0493C6C30B4944D04ABB44A1B95BF7B3 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -1087,10 +1137,85 @@
 			children = (
 				163CA3EA2ED9E613572666D2FC422953 /* FIRAnalyticsConnector.framework */,
 				76FE737087C06C48FEB0D0EC87D97E77 /* FirebaseAnalytics.framework */,
+=======
+		2E1EAE7AD31733C9E8A9B22E25FB8634 /* Pods-DrinkWaterWidgetExtension */ = {
+			isa = PBXGroup;
+			children = (
+				9C105EB5483B138AD94C95EFF642BA9B /* Pods-DrinkWaterWidgetExtension.modulemap */,
+				CE76A2BB5B792EB585D6F561FA25E0CD /* Pods-DrinkWaterWidgetExtension-acknowledgements.markdown */,
+				9EAB98CB48B6806ECE3F6EB1CD8B1EC6 /* Pods-DrinkWaterWidgetExtension-acknowledgements.plist */,
+				84545A3A29405D588DB68C70F8FB2C4D /* Pods-DrinkWaterWidgetExtension-dummy.m */,
+				95E69FD19C327F18116984137DDAD50B /* Pods-DrinkWaterWidgetExtension-Info.plist */,
+				4C8F17A6AD898DF69ED52DA9DCE366E0 /* Pods-DrinkWaterWidgetExtension-umbrella.h */,
+				FC4776D09F66D185279D967E461A2FF2 /* Pods-DrinkWaterWidgetExtension.debug.xcconfig */,
+				4C8F766E0F7B84B03E2A597EE74768BF /* Pods-DrinkWaterWidgetExtension.release.xcconfig */,
+			);
+			name = "Pods-DrinkWaterWidgetExtension";
+			path = "Target Support Files/Pods-DrinkWaterWidgetExtension";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		77E5A0E77295104D7E221C6079F0D5B0 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9FBEF7C0680893D31DE8E3ED678FED50 /* Pods-DrinkWater */,
+				2E1EAE7AD31733C9E8A9B22E25FB8634 /* Pods-DrinkWaterWidgetExtension */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9FBEF7C0680893D31DE8E3ED678FED50 /* Pods-DrinkWater */ = {
+			isa = PBXGroup;
+			children = (
+				DFFFB7387B35873D1A0E3A5098F11314 /* Pods-DrinkWater.modulemap */,
+				963C4BD3CB9521D9D5F4A953CFCA44D3 /* Pods-DrinkWater-acknowledgements.markdown */,
+				B544B1166DF4A15296C12F688B8D056E /* Pods-DrinkWater-acknowledgements.plist */,
+				A86C2CF51A02B63648086CFC82A4516F /* Pods-DrinkWater-dummy.m */,
+				23411EFF05B421F71A5F48A09A0CA9C9 /* Pods-DrinkWater-Info.plist */,
+				F71B91E7577CFAD53D19D27BC8D1A278 /* Pods-DrinkWater-umbrella.h */,
+				C65E6CBA96B0ED7CF58730152FD3D440 /* Pods-DrinkWater.debug.xcconfig */,
+				B8F633823707678F38ED875C324D37A3 /* Pods-DrinkWater.release.xcconfig */,
+			);
+			name = "Pods-DrinkWater";
+			path = "Target Support Files/Pods-DrinkWater";
+			sourceTree = "<group>";
+		};
+		A7D4503629B9C4B52357726AE0664825 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				704788278A5BA120DA60E75191DB631F /* Pods_DrinkWater.framework */,
+				54A830EF3AEAAB0C5D5FBA34A025F9AC /* Pods_DrinkWaterWidgetExtension.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				A7D4503629B9C4B52357726AE0664825 /* Products */,
+				77E5A0E77295104D7E221C6079F0D5B0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+>>>>>>> Stashed changes
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+<<<<<<< Updated upstream
 		2EFB57A51310A653B76A3965A24A0E5D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -3196,6 +3321,137 @@
 			baseConfigurationReference = CA629D5070BC29B19D1565065A64085C /* FirebaseInstallations.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
+=======
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3E9A8C7C27737B6981300FE5185C2D1B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8151D7BB2061F15D10C91426AD063902 /* Pods-DrinkWaterWidgetExtension-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B29871925703C4B66D68CBB89E4C52B0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7185B720A4D67DAA3EABF2CB04BB1BF1 /* Pods-DrinkWater-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		007FEB43FB0FB2CC8FC53B2443158F16 /* Pods-DrinkWater */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1358F142B43359F254E12BC7ADBB1CF /* Build configuration list for PBXNativeTarget "Pods-DrinkWater" */;
+			buildPhases = (
+				B29871925703C4B66D68CBB89E4C52B0 /* Headers */,
+				C6E49E008E42201D6910CF5CAD6F71A0 /* Sources */,
+				A9CFFD788803B52375F670C36E4FC417 /* Frameworks */,
+				55903BFADB3299AF42D2B3625B8132E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-DrinkWater";
+			productName = "Pods-DrinkWater";
+			productReference = 704788278A5BA120DA60E75191DB631F /* Pods_DrinkWater.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D0619F1986A6481C47B3B20B00E2A410 /* Pods-DrinkWaterWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87573B7C670799BFB18B518EF022CABA /* Build configuration list for PBXNativeTarget "Pods-DrinkWaterWidgetExtension" */;
+			buildPhases = (
+				3E9A8C7C27737B6981300FE5185C2D1B /* Headers */,
+				4E6BAA16966CC09CDF88C6B60195EBF1 /* Sources */,
+				67F5CA19253087E7912FE36B38FA09B4 /* Frameworks */,
+				FDE28C111A9B8DD1F08DD093FEB0F8FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-DrinkWaterWidgetExtension";
+			productName = "Pods-DrinkWaterWidgetExtension";
+			productReference = 54A830EF3AEAAB0C5D5FBA34A025F9AC /* Pods_DrinkWaterWidgetExtension.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = A7D4503629B9C4B52357726AE0664825 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				007FEB43FB0FB2CC8FC53B2443158F16 /* Pods-DrinkWater */,
+				D0619F1986A6481C47B3B20B00E2A410 /* Pods-DrinkWaterWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		55903BFADB3299AF42D2B3625B8132E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDE28C111A9B8DD1F08DD093FEB0F8FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E6BAA16966CC09CDF88C6B60195EBF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB37C08C16EE37DB6F3367E1728E4DBD /* Pods-DrinkWaterWidgetExtension-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6E49E008E42201D6910CF5CAD6F71A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBCEF20F3C2446C2707014210286CDAB /* Pods-DrinkWater-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3C80B13522F4973F1F843175B1489E86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC4776D09F66D185279D967E461A2FF2 /* Pods-DrinkWaterWidgetExtension.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+>>>>>>> Stashed changes
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -3204,15 +3460,22 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+<<<<<<< Updated upstream
 				INFOPLIST_FILE = "Target Support Files/FirebaseInstallations/FirebaseInstallations-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+=======
+				INFOPLIST_FILE = "Target Support Files/Pods-DrinkWaterWidgetExtension/Pods-DrinkWaterWidgetExtension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+>>>>>>> Stashed changes
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
+<<<<<<< Updated upstream
 				MODULEMAP_FILE = "Target Support Files/FirebaseInstallations/FirebaseInstallations.modulemap";
 				PRODUCT_MODULE_NAME = FirebaseInstallations;
 				PRODUCT_NAME = FirebaseInstallations;
@@ -3232,6 +3495,28 @@
 			baseConfigurationReference = 508917C882A274173F84AB79F05DA0D4 /* GoogleUtilities.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
+=======
+				MODULEMAP_FILE = "Target Support Files/Pods-DrinkWaterWidgetExtension/Pods-DrinkWaterWidgetExtension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4F283EB0A0E21ABA92AD6D765E5FC9EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8F633823707678F38ED875C324D37A3 /* Pods-DrinkWater.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+>>>>>>> Stashed changes
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -3240,15 +3525,22 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+<<<<<<< Updated upstream
 				GCC_PREFIX_HEADER = "Target Support Files/GoogleUtilities/GoogleUtilities-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/GoogleUtilities/GoogleUtilities-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+=======
+				INFOPLIST_FILE = "Target Support Files/Pods-DrinkWater/Pods-DrinkWater-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+>>>>>>> Stashed changes
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+<<<<<<< Updated upstream
 				MODULEMAP_FILE = "Target Support Files/GoogleUtilities/GoogleUtilities.modulemap";
 				PRODUCT_MODULE_NAME = GoogleUtilities;
 				PRODUCT_NAME = GoogleUtilities;
@@ -3300,29 +3592,16 @@
 			baseConfigurationReference = 7D1248AEB7A2C8875B2F8622E4E6BD26 /* PromisesObjC.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/PromisesObjC/PromisesObjC-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/PromisesObjC/PromisesObjC.modulemap";
-				PRODUCT_MODULE_NAME = FBLPromises;
-				PRODUCT_NAME = FBLPromises;
+=======
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DrinkWater/Pods-DrinkWater.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -3330,11 +3609,13 @@
 			};
 			name = Release;
 		};
-		E9960C3A0B22694E65BCB5F313055DB8 /* Debug */ = {
+		6834F0DB53ED205FD4005FCC6C8929B6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49CEF06F22BD85184297FC42B9E13B10 /* PromisesObjC.debug.xcconfig */;
+			baseConfigurationReference = 4C8F766E0F7B84B03E2A597EE74768BF /* Pods-DrinkWaterWidgetExtension.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+>>>>>>> Stashed changes
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -3343,14 +3624,21 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+<<<<<<< Updated upstream
 				INFOPLIST_FILE = "Target Support Files/PromisesObjC/PromisesObjC-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+=======
+				INFOPLIST_FILE = "Target Support Files/Pods-DrinkWaterWidgetExtension/Pods-DrinkWaterWidgetExtension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+>>>>>>> Stashed changes
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+<<<<<<< Updated upstream
 				MODULEMAP_FILE = "Target Support Files/PromisesObjC/PromisesObjC.modulemap";
 				PRODUCT_MODULE_NAME = FBLPromises;
 				PRODUCT_NAME = FBLPromises;
@@ -3358,16 +3646,97 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
+=======
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DrinkWaterWidgetExtension/Pods-DrinkWaterWidgetExtension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+>>>>>>> Stashed changes
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+<<<<<<< Updated upstream
+		E9960C3A0B22694E65BCB5F313055DB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49CEF06F22BD85184297FC42B9E13B10 /* PromisesObjC.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+=======
+		9C70E3E61DE16D4B8DF228745562AFC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C65E6CBA96B0ED7CF58730152FD3D440 /* Pods-DrinkWater.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+>>>>>>> Stashed changes
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+<<<<<<< Updated upstream
+				INFOPLIST_FILE = "Target Support Files/PromisesObjC/PromisesObjC-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+=======
+				INFOPLIST_FILE = "Target Support Files/Pods-DrinkWater/Pods-DrinkWater-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+>>>>>>> Stashed changes
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+<<<<<<< Updated upstream
+				MODULEMAP_FILE = "Target Support Files/PromisesObjC/PromisesObjC.modulemap";
+				PRODUCT_MODULE_NAME = FBLPromises;
+				PRODUCT_NAME = FBLPromises;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+=======
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DrinkWater/Pods-DrinkWater.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+>>>>>>> Stashed changes
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
+<<<<<<< Updated upstream
 		ED7888FA6713EABBF66D26A8003AD1CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+=======
+		BC01E0B73776AF6B58DC318A9BE988D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+>>>>>>> Stashed changes
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -3390,6 +3759,10 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+<<<<<<< Updated upstream
+=======
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+>>>>>>> Stashed changes
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -3415,7 +3788,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+<<<<<<< Updated upstream
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+=======
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+>>>>>>> Stashed changes
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -3428,6 +3805,7 @@
 			};
 			name = Debug;
 		};
+<<<<<<< Updated upstream
 		EF8065C7A256065A6CE682556AB22F2A /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F5CCB21DF5677FC3E4D847255A8E3A89 /* Firebase.release.xcconfig */;
@@ -3459,12 +3837,74 @@
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+=======
+		C605C363CC9F26F9FF97DBB1D5C6E25C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+>>>>>>> Stashed changes
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+<<<<<<< Updated upstream
 		046D29A0104B5E019361252F02A3AC0E /* Build configuration list for PBXNativeTarget "Pods-DrinkWater" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -3569,24 +4009,47 @@
 			buildConfigurations = (
 				3C4406DAB04EACB34AA4992B4170C803 /* Debug */,
 				EF8065C7A256065A6CE682556AB22F2A /* Release */,
+=======
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC01E0B73776AF6B58DC318A9BE988D7 /* Debug */,
+				C605C363CC9F26F9FF97DBB1D5C6E25C /* Release */,
+>>>>>>> Stashed changes
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+<<<<<<< Updated upstream
 		D714EFAF91AF42119B673C282ADF2B13 /* Build configuration list for PBXAggregateTarget "GoogleAppMeasurement" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BD93B2E4059E0471B7BD32FD4088CAD5 /* Debug */,
 				C3B2ADE423D5A4C3E20957FD19F24B88 /* Release */,
+=======
+		87573B7C670799BFB18B518EF022CABA /* Build configuration list for PBXNativeTarget "Pods-DrinkWaterWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C80B13522F4973F1F843175B1489E86 /* Debug */,
+				6834F0DB53ED205FD4005FCC6C8929B6 /* Release */,
+>>>>>>> Stashed changes
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+<<<<<<< Updated upstream
 		F7B9206E26DEB0994836EBA1FC0E2DE6 /* Build configuration list for PBXAggregateTarget "FirebaseAnalytics" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AEA23F3069C5FB0D66264C8B09529CCC /* Debug */,
 				F402ED8BDBF7B786BBC23BEACC6474FC /* Release */,
+=======
+		F1358F142B43359F254E12BC7ADBB1CF /* Build configuration list for PBXNativeTarget "Pods-DrinkWater" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C70E3E61DE16D4B8DF228745562AFC3 /* Debug */,
+				4F283EB0A0E21ABA92AD6D765E5FC9EA /* Release */,
+>>>>>>> Stashed changes
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

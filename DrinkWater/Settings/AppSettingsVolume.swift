@@ -8,14 +8,21 @@
 
 import UIKit
 
+<<<<<<< Updated upstream:DrinkWater/Settings/AppSettingsVolume.swift
 class AppSettingsVolume {
+=======
+class AppSettings {
+    
+    static let appGroup = "group.com.drink.water"
+    
+>>>>>>> Stashed changes:DrinkWater/UserStories/Settings/AppSettings.swift
     static var unit: UnitVolume {
         get {
-            let value = UserDefaults.standard.string(forKey: #function) ?? ""
+            let value = UserDefaults(suiteName: appGroup)?.string(forKey:  #function)  ?? ""
             return UnitVolume(rawValue: value) ?? .liter
         }
         set {
-            UserDefaults.standard.setValue(newValue.rawValue, forKey: #function)
+            UserDefaults(suiteName: appGroup)?.setValue(newValue.rawValue, forKey: #function)
         }
     }
 }
