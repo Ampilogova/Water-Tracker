@@ -18,15 +18,15 @@ class WaterService {
         print(dict)
     }
     
-    func currentDate() -> String {
+    public func currentDate() -> String {
         let date = Date()
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
         return dateFormatter.string(from: date)
     }
     
-    // 1. Показывать количество выпитой воды за сегодня и за определенную дату
-    func waterAmount(at date: String) -> Double {
+    // Show the amount of water drunk for today and for a specific date
+   public func waterAmount(at date: String) -> Double {
         
         let waterData = userDefaults.value(forKey: "Water")
         let dict = waterData as? [String: [String: Double]] ?? [:]
@@ -39,22 +39,19 @@ class WaterService {
         return result
     }
     
-    func currentWaterAmount() -> Double {
+   public func currentWaterAmount() -> Double {
         return waterAmount(at: currentDate())
     }
-    
-    // 2. вывести текущее время. Должно получиться что то типа 15:23:44 hh:mm:ss
-    
-    func currentTime() -> String {
+//    Display the current time.
+    public func currentTime() -> String {
         let date = Date()
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "HH:mm:ss"
         return dateFormatter.string(from: date)
     }
     
-    // 3. Пользователь вносит новое значение нужно его записать. Записать в текущий день по текущему времени значение
-    
-    func addWater(value: Double) {
+//    The user enters a new value. Write the value on the current day at the current time
+    public func addWater(value: Double) {
         let waterData = userDefaults.value(forKey: "Water")
         var dict = waterData as? [String: [String: Double]] ?? [:]
         let dataKey = currentDate()
@@ -65,8 +62,9 @@ class WaterService {
         userDefaults.set(dict, forKey: "Water")
     }
     
-    // 4. Вывести все дни и количество выпитой воды в эти дни, Даты должны быть отсортированы по убыванию
-    func history() -> [(date: String, value: Double)] {
+    // 4. Display all days and the amount of water drunk on these days, Dates must be sorted in descending order
+    
+    public func history() -> [(date: String, value: Double)] {
         let waterData = userDefaults.value(forKey: "Water")
         let dict = waterData as? [String: [String: Double]] ?? [:]
         let days = Array(dict.keys)
@@ -81,12 +79,11 @@ class WaterService {
             historyArray.append((day, result))
         }
         
-        return historyArray.sorted(by: { $0.date < $1.date })
+        return historyArray.sorted(by: { $01.date < $0.date })
     }
     
-    // 5. Показать историю выпитой воды за определенный день 
-    
-    func water(at date: String) -> [(time: String, value: Double)] {
+    //  Show the history of the water you drink for a specific day
+    public func water(at date: String) -> [(time: String, value: Double)] {
         let waterData = userDefaults.value(forKey: "Water")
         let dict = waterData as? [String: [String: Double]] ?? [:]
         let dayDict = dict[date] ?? [:]
@@ -99,11 +96,22 @@ class WaterService {
         return result.sorted(by: { $0.time < $1.time })
     }
     
-    func remove()  {
+    public func remove()  {
         userDefaults.removeObject(forKey: "Water")
     }
     
-    func isEmpty() -> Bool {
+    public func undo() {
+         let waterData = userDefaults.value(forKey: "Water")
+         var dict = waterData as? [String: [String: Double]] ?? [:]
+         let dataKey = currentDate()
+         var values = dict[dataKey] ?? [:]
+         let keys = values.enumerated().map({ $0.element.key }).sorted(by: { $0 < $1 })
+         values.removeValue(forKey: keys.last ?? "")
+         dict[dataKey] = values
+         userDefaults.set(dict, forKey: "Water")
+     }
+    
+    public  func isEmpty() -> Bool {
         if userDefaults.value(forKey: "Water") != nil {
             return false
         } else {
