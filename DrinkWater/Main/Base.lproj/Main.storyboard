@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BCe-Sh-aVd">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -18,8 +17,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8eu-6g-hzO">
-                                <rect key="frame" x="22" y="104" width="64" height="31.5"/>
-                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="28"/>
+                                <rect key="frame" x="22" y="104" width="55" height="27"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="24"/>
                                 <color key="textColor" red="0.45098039220000002" green="0.45098039220000002" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -77,16 +76,16 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Yh-b7-OQB">
-                                <rect key="frame" x="22" y="143.5" width="242" height="31.5"/>
-                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="28"/>
+                                <rect key="frame" x="22" y="139" width="242" height="27"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="24"/>
                                 <color key="textColor" red="0.45098039220000002" green="0.45098039220000002" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n8z-4G-AWH">
-                                <rect key="frame" x="0.0" y="215" width="414" height="438"/>
+                                <rect key="frame" x="0.0" y="206" width="414" height="447"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gSa-Cd-Kmv">
-                                        <rect key="frame" x="57" y="69" width="300" height="300"/>
+                                        <rect key="frame" x="57" y="73.5" width="300" height="300"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="300" id="6jv-ww-zUo"/>
@@ -94,7 +93,7 @@
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="QW3-Yo-XDx">
-                                        <rect key="frame" x="88" y="253" width="238" height="46"/>
+                                        <rect key="frame" x="88" y="257.5" width="238" height="46"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqH-qQ-6Ll">
                                                 <rect key="frame" x="0.0" y="0.0" width="73.5" height="46"/>
@@ -121,7 +120,7 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEg-Z8-EMU">
-                                        <rect key="frame" x="179" y="137" width="56" height="112"/>
+                                        <rect key="frame" x="179" y="141.5" width="56" height="112"/>
                                         <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="100"/>
                                         <color key="textColor" red="0.45098039220000002" green="0.45098039220000002" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -138,7 +137,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lR-QV-aMB">
-                                <rect key="frame" x="294" y="104" width="100" height="33"/>
+                                <rect key="frame" x="217" y="104" width="177" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" red="0.054901960780000002" green="0.90588235289999997" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -160,7 +159,6 @@
                             <constraint firstItem="bID-MR-b9c" firstAttribute="top" secondItem="n8z-4G-AWH" secondAttribute="bottom" id="Ck1-IH-Zj4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="8eu-6g-hzO" secondAttribute="trailing" symbolic="YES" id="DJq-7v-HNc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8Yh-b7-OQB" secondAttribute="trailing" constant="150" id="EqH-MF-FxY"/>
-                            <constraint firstItem="7lR-QV-aMB" firstAttribute="leading" secondItem="8eu-6g-hzO" secondAttribute="trailing" constant="208" id="J7T-ir-c0e"/>
                             <constraint firstItem="8Yh-b7-OQB" firstAttribute="top" secondItem="8eu-6g-hzO" secondAttribute="bottom" constant="8" id="MsX-ku-3lB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="n8z-4G-AWH" secondAttribute="trailing" id="P2Q-eN-jXf"/>
                             <constraint firstItem="3Fs-sn-uje" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="qWp-Ol-cUo" secondAttribute="trailing" constant="8" symbolic="YES" id="P6p-jv-SiS"/>
@@ -171,6 +169,7 @@
                             <constraint firstItem="8eu-6g-hzO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="22" id="Y0M-Ji-8Sb"/>
                             <constraint firstItem="3xY-2A-qw2" firstAttribute="height" secondItem="qWp-Ol-cUo" secondAttribute="height" id="c0E-3g-dZL"/>
                             <constraint firstItem="qWp-Ol-cUo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dgf-2u-SOh"/>
+                            <constraint firstItem="7lR-QV-aMB" firstAttribute="leading" secondItem="8eu-6g-hzO" secondAttribute="trailing" constant="140" id="eJF-Mc-IUU"/>
                             <constraint firstItem="3Fs-sn-uje" firstAttribute="height" secondItem="qWp-Ol-cUo" secondAttribute="height" id="grm-1x-aIO"/>
                             <constraint firstItem="3Fs-sn-uje" firstAttribute="top" secondItem="bID-MR-b9c" secondAttribute="bottom" constant="30" id="lBK-F5-xQ3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Fs-sn-uje" secondAttribute="trailing" constant="37" id="qfo-Ov-c0Y"/>
