@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "FIRApp 2.h"
 #import "FIRApp.h"
 #import "FIRConfiguration.h"
 #import "FirebaseCore.h"
