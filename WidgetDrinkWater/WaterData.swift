@@ -83,16 +83,12 @@ struct WaterData: Identifiable, Codable, Hashable {
         
         let dateFormatterTime = DateFormatter()
         dateFormatterTime.dateFormat = "HH:mm"
+        dateFormatterTime.locale = Locale.current
+        dateFormatterTime.timeStyle = .short
         return dateFormatterTime.string(from: time)
+
+        
     }
     
-//    private func convertTimeNotification() {
-//        var arrayTime = [Int]()
-//        let element = WaterData.lastDrinkTime()
-//        let components = element.components(separatedBy: ":")
-//        let hours = Int(components[0]) ?? 0
-//        arrayTime.append(hours)
-//        
-//    }
     
 }
