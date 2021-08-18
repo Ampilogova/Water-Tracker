@@ -9,13 +9,16 @@
 import UIKit
 
 class AppSettings {
+    
+    static let appGroup = "group.com.drink.water"
+    
     static var unit: UnitVolume {
-        get {
-            let value = UserDefaults.standard.string(forKey: #function) ?? ""
-            return UnitVolume(rawValue: value) ?? .liter
-        }
-        set {
-            UserDefaults.standard.setValue(newValue.rawValue, forKey: #function)
-        }
+         get {
+             let value = UserDefaults(suiteName: appGroup)?.string(forKey:  #function)  ?? ""
+             return UnitVolume(rawValue: value) ?? .liter
+         }
+         set {
+             UserDefaults(suiteName: appGroup)?.setValue(newValue.rawValue, forKey: #function)
+         }
     }
 }
