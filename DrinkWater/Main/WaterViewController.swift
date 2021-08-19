@@ -40,6 +40,7 @@ class WaterViewController: UIViewController {
         ofLabel.text = loc("of")
         dateLable.text = DateHelper.formattedDate(from: waterService.currentDate())
         createUndoButton()
+        updateVolumeLabel()
     }
     
     override func viewWillAppear(_ animated: Bool) {
