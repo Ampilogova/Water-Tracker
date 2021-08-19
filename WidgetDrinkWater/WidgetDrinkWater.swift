@@ -29,18 +29,9 @@ struct Provider: TimelineProvider {
     
     
     func getTimeline( in context: Context, completion: @escaping (Timeline<WaterEntry>) -> Void) {
-        //        let currentDate = Date()
         var entries: [WaterEntry] = []
-        
-        //        for hourOffset in 0 ..< 60 {
-        //            let entryDate = Calendar.current.date(byAdding: .second, value: hourOffset, to: currentDate)!
-        //
-        //            let entry = WaterEntry(date: entryDate, water: WaterData.getWater())
-        //            entries.append(entry)
-        //        }
         let currentDate = Date()
         let startOfDay = Calendar.current.startOfDay(for: currentDate)
-        //        let endOfDay = Calendar.current.date(byAdding: .day, value: 1, to: startOfDay)!
         let entry = WaterEntry(date: startOfDay, water: WaterData.getWater())
         entries.append(entry)
         
