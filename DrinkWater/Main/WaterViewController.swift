@@ -113,6 +113,7 @@ class WaterViewController: UIViewController {
         handleTap(value: volume?.value ?? 0.0)
         fullCircle(value: volume?.value ?? 0.0)
         waterService.addWater(value: volume?.value ?? 0.0)
+        waterService.reloadWidget()
         updateVolumeLabel()
     }
     

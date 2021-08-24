@@ -52,8 +52,8 @@ class VolumeSettingViewController: UIViewController, UITableViewDelegate, UITabl
             cell.accessoryType = .checkmark
         } else {
             cell.accessoryType = .none
-            
         }
+        waterServiceController.reloadWidget()
         return cell
     }
     
