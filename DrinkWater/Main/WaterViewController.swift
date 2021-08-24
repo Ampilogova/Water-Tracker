@@ -40,6 +40,7 @@ class WaterViewController: UIViewController {
         ofLabel.text = loc("of")
         dateLable.text = DateHelper.formattedDate(from: waterService.currentDate())
         createUndoButton()
+        updateVolumeLabel()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -57,6 +58,8 @@ class WaterViewController: UIViewController {
         
         let previousMaxValue = AppSettings.unit.maxAmount
         reloadCircle(oldMaxValue: previousMaxValue)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(applicationDidBecomeActive), name: UIApplication.didBecomeActiveNotification, object: nil)
     }
     
     override func viewDidLayoutSubviews() {
@@ -136,7 +139,11 @@ class WaterViewController: UIViewController {
         targetAmountButton.setTitle(VolumeFormatter.string(from: AppSettings.unit.maxAmount), for: .normal) 
     }
     
-    
+    @objc private func applicationDidBecomeActive() {
+        updateVolumeLabel()
+        let previousMaxValue = AppSettings.unit.maxAmount
+        reloadCircle(oldMaxValue: previousMaxValue)
+    }
     @IBAction func undoAction(_ sender: Any) {
         waterService.undo()
         updateVolumeLabel()
@@ -202,6 +209,7 @@ class WaterViewController: UIViewController {
         basicAnimation.isRemovedOnCompletion = false
         foregroundCycleLayer.add(basicAnimation, forKey: "basicAnimation")
     }
+    
     func fullCircle(value: Double) {
         let currentMaxAmount = AppSettings.unit.maxAmount
         let currentValue = waterService.currentWaterAmount()

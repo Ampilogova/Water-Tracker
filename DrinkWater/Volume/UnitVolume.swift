@@ -23,7 +23,7 @@ enum UnitVolume: String {
         }
     }
     static let appGroup = "group.com.drink.water"
-    
+
     static var customAmount: Double {
         get { return UserDefaults(suiteName: appGroup)?.double(forKey: #function) ?? 0.0 }
         set { UserDefaults(suiteName: appGroup)?.setValue(newValue, forKey: #function) }
