@@ -58,6 +58,8 @@ class WaterViewController: UIViewController {
         
         let previousMaxValue = AppSettings.unit.maxAmount
         reloadCircle(oldMaxValue: previousMaxValue)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(applicationDidBecomeActive), name: UIApplication.didBecomeActiveNotification, object: nil)
     }
     
     override func viewDidLayoutSubviews() {
@@ -136,7 +138,9 @@ class WaterViewController: UIViewController {
         targetAmountButton.setTitle(VolumeFormatter.string(from: AppSettings.unit.maxAmount), for: .normal) 
     }
     
-    
+    @objc private func applicationDidBecomeActive() {
+        updateVolumeLabel()
+    }
     @IBAction func undoAction(_ sender: Any) {
         waterService.undo()
         updateVolumeLabel()
