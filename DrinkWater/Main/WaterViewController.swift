@@ -41,6 +41,7 @@ class WaterViewController: UIViewController {
         dateLable.text = DateHelper.formattedDate(from: waterService.currentDate())
         createUndoButton()
         updateVolumeLabel()
+        view.backgroundColor = UIColor.tint
     }
     
     override func viewWillAppear(_ animated: Bool) {
