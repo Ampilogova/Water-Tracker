@@ -140,6 +140,8 @@ class WaterViewController: UIViewController {
     
     @objc private func applicationDidBecomeActive() {
         updateVolumeLabel()
+        let previousMaxValue = AppSettings.unit.maxAmount
+        reloadCircle(oldMaxValue: previousMaxValue)
     }
     @IBAction func undoAction(_ sender: Any) {
         waterService.undo()
@@ -206,6 +208,7 @@ class WaterViewController: UIViewController {
         basicAnimation.isRemovedOnCompletion = false
         foregroundCycleLayer.add(basicAnimation, forKey: "basicAnimation")
     }
+    
     func fullCircle(value: Double) {
         let currentMaxAmount = AppSettings.unit.maxAmount
         let currentValue = waterService.currentWaterAmount()
